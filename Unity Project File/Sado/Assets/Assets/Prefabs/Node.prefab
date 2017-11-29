@@ -101,6 +101,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeNo: 0
   connectedNodes: []
+  isPrimObjective: 0
+  isSecoObjective: 0
+  secObjValue: 0
+  isObjectiveOver: 1
+  isStart: 0
+  isEnd: 0
+  crowdDensity: 0
 --- !u!212 &212347471933465706
 SpriteRenderer:
   m_ObjectHideFlags: 1
