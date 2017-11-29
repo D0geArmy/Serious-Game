@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\ButtonManager.cs">
+    <Files>
+      <File FileName="Assets\BoxControl.cs" Line="69" Column="4" />
+      <File FileName="Assets\MiniGameManager.cs" Line="13" Column="32" />
+      <File FileName="Assets\_Scripts\ButtonManager.cs" Line="10" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
