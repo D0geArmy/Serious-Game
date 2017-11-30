@@ -40,6 +40,13 @@ public class NodeController : MonoBehaviour {
         myManager = FindObjectOfType<NodeManager>().gameObject.GetComponent<NodeManager>();
         Player = myManager.player;
         sTimer = myManager.scene.sceneCounter;
+        foreach (NodeController nc in myManager.iNode)
+        {
+            if (nc.isStart)
+            {
+                Player.position = nc.transform.position;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -83,28 +90,32 @@ public class NodeController : MonoBehaviour {
             else
             {
                 callDialogSchool();
+                
             }
         }
         else
         {
             //trigger for seco obj narrative sequence here
-            callDialogSecObj();
+            //callDialogSecObj();
         }
     }
 
     //showing the connections between node in editor
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (connectedNodes != null)
         {
             foreach (NodeController nc in connectedNodes)
             {
+                Gizmos.color = Color.magenta;
                 Vector3 a = new Vector3 (nc.transform.position.x, nc.transform.position.y, nc.transform.position.z);
                 Vector3 b = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
                 Gizmos.DrawLine(a, b);
-                Vector3 dir = new Vector3 (a.x - b.x, a.y - b.y, a.z - b.z);
-                Vector3 c = new Vector3(dir.x + .5f, dir.y, dir.z);
-                Gizmos.DrawLine(dir, c);
+                Vector3 dir = b - a;
+                //Gizmos.DrawRay(a, dir);
+                //Vector3 dir = new Vector3 (a.x - b.x, a.y - b.y, a.z - b.z);
+                //Vector3 c = new Vector3(dir.x + .5f, dir.y, dir.z);
+                //Gizmos.DrawLine(dir, c);
             }
         }
     }
