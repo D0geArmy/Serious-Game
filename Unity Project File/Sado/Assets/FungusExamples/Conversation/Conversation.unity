@@ -660,8 +660,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1544660786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 726, y: 408.5, z: 0}
-  m_LocalScale: {x: 0.68083334, y: 0.68083334, z: 0.68083334}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 1311069594}
   - {fileID: 599196445}
@@ -896,11 +896,11 @@ GameObject:
   - component: {fileID: 1755499610}
   - component: {fileID: 1755499606}
   - component: {fileID: 1755499608}
+  - component: {fileID: 1755499609}
   - component: {fileID: 1755499607}
   - component: {fileID: 1755499611}
   - component: {fileID: 1755499613}
   - component: {fileID: 1755499612}
-  - component: {fileID: 1755499609}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1014,17 +1014,18 @@ MonoBehaviour:
   - {fileID: 1755499611}
 --- !u!114 &1755499609
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 11462346, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1755499605}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfcefb900be84c948bbe013dc8ffefb5, type: 3}
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1755499608}
-  FireOn: 17
+  waitForFrames: 1
 --- !u!4 &1755499610
 Transform:
   m_ObjectHideFlags: 0

@@ -57,20 +57,24 @@ public class NodeController : MonoBehaviour {
     //on click move to clicked object
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!myManager.disabled)
         {
-            //find the node player is on
-            currentNode = myManager.currentNode(NodeNo);
-            //find if th clicked node is part of the connected nodes in current node
-            foreach (NodeController nc in currentNode.connectedNodes) {
-                if (nc.NodeNo == NodeNo)
+            if (Input.GetMouseButtonDown(0))
+            {
+                //find the node player is on
+                currentNode = myManager.currentNode(NodeNo);
+                //find if th clicked node is part of the connected nodes in current node
+                foreach (NodeController nc in currentNode.connectedNodes)
                 {
-                    Player.position = transform.position;
+                    if (nc.NodeNo == NodeNo)
+                    {
+                        Player.position = transform.position;
+                        //onclick update objective and reduce time
+                        UpdateObjective();
+                        sTimer.DecreaseTime(1);
+                    }
                 }
             }
-            //onclick update objective and reduce time
-            UpdateObjective();
-            sTimer.DecreaseTime(1);
         }
     }
 
@@ -90,7 +94,6 @@ public class NodeController : MonoBehaviour {
             else
             {
                 callDialogSchool();
-                
             }
         }
         else

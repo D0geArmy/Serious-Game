@@ -5,6 +5,7 @@ using UnityEngine;
 public class NodeManager : MonoBehaviour {
 
     public MySceneManager scene;
+    public bool disabled = false;
     [Tooltip("Add all the nodes here")]
     public NodeController[] iNode;
     NodeController[] Objective;
