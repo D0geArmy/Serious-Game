@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class NodeController : MonoBehaviour {
 
+    Flowchart flowchart;
     [Tooltip("Unique ID")]
     public int NodeNo;
     [Tooltip("Nodes you can move to from this one")]
@@ -40,6 +42,7 @@ public class NodeController : MonoBehaviour {
         myManager = FindObjectOfType<NodeManager>().gameObject.GetComponent<NodeManager>();
         Player = myManager.player;
         sTimer = myManager.scene.sceneCounter;
+        flowchart = myManager.flowchart;
         foreach (NodeController nc in myManager.iNode)
         {
             if (nc.isStart)
@@ -87,19 +90,23 @@ public class NodeController : MonoBehaviour {
             //trigger for prim obj narrative sequence here
             if (isEnd)
             {
+                myManager.disabled = true;
                 //trigger end here
                 myManager.ReachedEnd();
-                callDialogWork();
+                flowchart.ExecuteBlock("School");
             }
             else
             {
-                callDialogSchool();
+                flowchart.ExecuteBlock("Work");
             }
         }
         else
         {
+            myManager.disabled = true;
             //trigger for seco obj narrative sequence here
-            //callDialogSecObj();
+            //
+            flowchart.SetIntegerVariable("CurrObj", secObjValue);
+            flowchart.ExecuteBlock("SecondayObj");
         }
     }
 

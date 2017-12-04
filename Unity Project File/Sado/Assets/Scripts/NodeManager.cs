@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class NodeManager : MonoBehaviour {
 
+    public Flowchart flowchart;
     public MySceneManager scene;
     public bool disabled = false;
     [Tooltip("Add all the nodes here")]
