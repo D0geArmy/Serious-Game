@@ -5,7 +5,11 @@ using Fungus;
 
 public class NodeManager : MonoBehaviour {
 
+    //fungus related
     public Flowchart flowchart;
+    public MenuDialog ObjList;
+
+    //Nodemanager functionalities
     public MySceneManager scene;
     public bool disabled = false;
     [Tooltip("Add all the nodes here")]
@@ -23,10 +27,13 @@ public class NodeManager : MonoBehaviour {
                 endGoal = nc;
             }
         }
+        
     }
 
     private void Update()
     {
+        //init disabled every frame
+        disabled = flowchart.GetBooleanVariable("NodeDisabled");
         if (endGoal != null)
         {
             if (player.position == endGoal.gameObject.transform.position)

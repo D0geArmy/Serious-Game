@@ -25,24 +25,19 @@ public class NodeController : MonoBehaviour {
     [SerializeField] [Tooltip("Time to get to this node")]
     //int timeConsumed; change to counter
     int crowdDensity;
-
+    bool move = false;
 
     Counter sTimer;
     NodeManager myManager;
     Transform Player;
     NodeController currentNode;
 
-    public delegate void OnObjective();
-    public static event OnObjective callDialogWork;
-    public static event OnObjective callDialogSchool;
-    public static event OnObjective callDialogSecObj;
-
 	// Use this for initialization
 	void Start () {
         myManager = FindObjectOfType<NodeManager>().gameObject.GetComponent<NodeManager>();
         Player = myManager.player;
         sTimer = myManager.scene.sceneCounter;
-        flowchart = myManager.flowchart;
+        flowchart = myManager.flowchart; 
         foreach (NodeController nc in myManager.iNode)
         {
             if (nc.isStart)
@@ -54,7 +49,14 @@ public class NodeController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        
+        if (move)
+        {
+            Vector3.Lerp(Player.position, transform.position, 1);
+            if(Player.position == transform.position)
+            {
+                move = false;
+            }
+        }
     }
 
     //on click move to clicked object
@@ -71,6 +73,7 @@ public class NodeController : MonoBehaviour {
                 {
                     if (nc.NodeNo == NodeNo)
                     {
+                        //move = true;
                         Player.position = transform.position;
                         //onclick update objective and reduce time
                         UpdateObjective();
