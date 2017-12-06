@@ -25,7 +25,6 @@ public class NodeController : MonoBehaviour {
     [SerializeField] [Tooltip("Time to get to this node")]
     //int timeConsumed; change to counter
     int crowdDensity;
-    bool move = false;
 
     Counter sTimer;
     NodeManager myManager;
@@ -49,14 +48,7 @@ public class NodeController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (move)
-        {
-            Vector3.Lerp(Player.position, transform.position, 1);
-            if(Player.position == transform.position)
-            {
-                move = false;
-            }
-        }
+
     }
 
     //on click move to clicked object
@@ -73,8 +65,8 @@ public class NodeController : MonoBehaviour {
                 {
                     if (nc.NodeNo == NodeNo)
                     {
-                        //move = true;
-                        Player.position = transform.position;
+                        myManager.attributes.movePlayer(true, transform.position);
+                        //Player.position = transform.position;
                         //onclick update objective and reduce time
                         UpdateObjective();
                         sTimer.DecreaseTime(1);
@@ -96,18 +88,24 @@ public class NodeController : MonoBehaviour {
                 myManager.disabled = true;
                 //trigger end here
                 myManager.ReachedEnd();
-                flowchart.ExecuteBlock("School");
+                flowchart.ExecuteBlock("Work");
             }
             else
             {
-                flowchart.ExecuteBlock("Work");
+                if (flowchart.GetBooleanVariable("isMorning"))
+                {
+                    flowchart.ExecuteBlock("School");
+                }
+                else
+                {
+                    flowchart.ExecuteBlock("Home");
+                }
             }
         }
         else
         {
             myManager.disabled = true;
             //trigger for seco obj narrative sequence here
-            //
             flowchart.SetIntegerVariable("CurrObj", secObjValue);
             flowchart.ExecuteBlock("SecondayObj");
         }

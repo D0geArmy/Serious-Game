@@ -4,19 +4,47 @@ using UnityEngine;
 
 public class PlayerAttributes : MonoBehaviour {
 
-    
-    int morale;
+    //essential
+    public NodeManager manager;
 
-	// Use this for initialization
-	void Start () {
+    //attributes
+    public int morale;
+    int totalMorale;
+
+    //node and movement related
+    public bool move = false;
+    NodeController previousNode;
+    Vector3 destination;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        //movement
+        if (move)
+        {
+            float distance = Vector3.Distance(transform.position, destination);
+            float speed = 1 / distance;
+            transform.position = Vector3.Lerp(transform.position, destination, speed);
+            if (transform.position == destination)
+            {
+                move = false;
+            }
+        }
+    }
 
+    //movement
+    public void movePlayer(bool mo, Vector3 des)
+    {
+        previousNode = manager.currentNode(1);
+        move = mo;
+        destination = des;
+    }
+
+    //morale increase and decrease from scripts
     public void DecreaseMorale(int amount)
     {
         morale -= amount;

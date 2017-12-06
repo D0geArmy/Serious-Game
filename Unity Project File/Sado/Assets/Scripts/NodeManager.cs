@@ -7,7 +7,6 @@ public class NodeManager : MonoBehaviour {
 
     //fungus related
     public Flowchart flowchart;
-    public MenuDialog ObjList;
 
     //Nodemanager functionalities
     public MySceneManager scene;
@@ -16,7 +15,11 @@ public class NodeManager : MonoBehaviour {
     public NodeController[] iNode;
     NodeController[] Objective;
     NodeController endGoal;
+
+    //player related
+    public PlayerAttributes attributes;
     public Transform player;
+    public int mor;
 
 	// Use this for initialization
 	void Start () {
@@ -27,13 +30,16 @@ public class NodeManager : MonoBehaviour {
                 endGoal = nc;
             }
         }
-        
     }
 
     private void Update()
     {
-        //init disabled every frame
+        //init bool disabled every frame
         disabled = flowchart.GetBooleanVariable("NodeDisabled");
+        //init morale values in script and flowchart
+        mor = attributes.morale;
+        flowchart.SetIntegerVariable("Morale", mor);
+
         if (endGoal != null)
         {
             if (player.position == endGoal.gameObject.transform.position)
