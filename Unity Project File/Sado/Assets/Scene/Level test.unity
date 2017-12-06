@@ -328,6 +328,8 @@ GameObject:
   - component: {fileID: 73722236}
   - component: {fileID: 73722238}
   - component: {fileID: 73722239}
+  - component: {fileID: 73722240}
+  - component: {fileID: 73722237}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -387,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1273.5134, y: 97.18421}
+  scrollPos: {x: 1544.4208, y: 91.72966}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -399,7 +401,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 73722191}
+  - {fileID: 73722204}
   selectedCommands: []
   variables:
   - {fileID: 73722185}
@@ -647,7 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -689.54956
+    x: -687.7314
     y: 6.0073147
     width: 120
     height: 40
@@ -807,6 +809,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 73722197}
   - {fileID: 73722201}
+  - {fileID: 73722240}
+  - {fileID: 73722237}
 --- !u!114 &73722199
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1607,6 +1611,35 @@ MonoBehaviour:
   scope: 1
   key: Morale
   value: 0
+--- !u!114 &73722237
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73722178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 53
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1573331603}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
 --- !u!114 &73722238
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1644,6 +1677,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 73722238}
   FireOn: 2
+--- !u!114 &73722240
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73722178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 52
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 178137394}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
 --- !u!1 &128299751
 GameObject:
   m_ObjectHideFlags: 0

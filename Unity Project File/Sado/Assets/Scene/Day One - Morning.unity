@@ -2782,7 +2782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Husband
+  nameText: Raj
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -4116,6 +4116,11 @@ GameObject:
   - component: {fileID: 1774212890}
   - component: {fileID: 1774212891}
   - component: {fileID: 1774212892}
+  - component: {fileID: 1774212893}
+  - component: {fileID: 1774212894}
+  - component: {fileID: 1774212896}
+  - component: {fileID: 1774212895}
+  - component: {fileID: 1774212897}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4151,8 +4156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 264.8722
-    y: -17.722336
+    x: 255.4972
+    y: -17.722334
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4163,6 +4168,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1774212808}
   commandList:
   - {fileID: 1774212822}
+  - {fileID: 1774212893}
   - {fileID: 1774212892}
   - {fileID: 1774212889}
   - {fileID: 1774212813}
@@ -4179,11 +4185,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 610.0125, y: -127.07068}
+  scrollPos: {x: 479.7516, y: -481.28}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.64000046
+  zoom: 0.8500001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -4191,9 +4197,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1774212816}
+  - {fileID: 1774212839}
   selectedCommands:
-  - {fileID: 1774212831}
+  - {fileID: 1774212845}
   variables:
   - {fileID: 1774212826}
   - {fileID: 1774212827}
@@ -4235,10 +4241,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Anjali anjali left : Oh man! It''s the first day of my work today.
-      I''m so excited! Better get moving!
-
-      Anjali anjali left2 : So many things to do!'
+    stringVal: "Anjali anjali left : Oh my god! It's the first day of my work today.
+      Been waiting for this day.. I'm so excited! \nAnjali anjali left2 : So many
+      things to do!"
 --- !u!114 &1774212813
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4274,7 +4279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.42542
     y: 71.418785
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4300,7 +4305,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248.94012
     y: 179.06192
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4326,7 +4331,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 496.68582
     y: 298.70447
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4354,9 +4359,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 239.0641
-    y: 297.00522
-    width: 128.12494
+    x: 257.0641
+    y: 295.00522
+    width: 141.7647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4404,7 +4409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 42.887913
     y: 301.10773
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4470,9 +4475,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: You play as Anjali, a 28-year old woman, who loves her family and tries
-    her best to do everything for them. She is about to start her job as a receptionist,
-    and is quite excited about it.
+  storyText: "Welcome to \"Just another day\".\r\nHere, you play as Anjali, a 28 year
+    old woman.\r\nShe lives in a family of four, that includes, her husband, her son
+    and her mother-in-law.\r\nShe loves her family and taking care of them is her
+    first priority."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4682,9 +4688,7 @@ MonoBehaviour:
     stringVal: 'Anjali left : Anyway, better hurry! Need to ready Raj''s briefcase
       before he leaves for work.
 
-      Husband : "Anjali! Where were you?"
-
-      Anjali : ...'
+      Husband idle Right : "Anjali! Where were you?"'
 --- !u!114 &1774212832
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4727,7 +4731,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 754.6882
     y: 298.06827
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4753,7 +4757,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 495.6198
     y: 423.11993
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4832,7 +4836,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Husband : "I''m getting late."
+    stringVal: 'Husband : "I''m getting late. Could you pack my lunch?"
 
       Anjali : "I''m so sorry! I was preparing Naman''s tiffin and packing few things
       for me. It''s the first day of my job."
@@ -4845,7 +4849,7 @@ MonoBehaviour:
       Husband : "Just kidding. Have fun though. Its a big day for you and I am here
       if you need anything."
 
-      Anjali : "Could you do me favor? Help Naman get ready."
+      Anjali : "Could you do me favor? Please help Naman get ready."
 
       Husband : '
 --- !u!114 &1774212839
@@ -4863,7 +4867,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 624.12463
     y: 625.21875
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4873,6 +4877,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1774212845}
+  - {fileID: 1774212897}
   - {fileID: 1774212855}
 --- !u!114 &1774212840
 MonoBehaviour:
@@ -4889,7 +4894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 372.30682
     y: 625.1001
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4899,6 +4904,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1774212846}
+  - {fileID: 1774212895}
   - {fileID: 1774212854}
 --- !u!114 &1774212841
 MonoBehaviour:
@@ -4971,9 +4977,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Husband : "God! You look after that kid way too much"
-
-      Husband : "Pay attention to me sometimes!"'
+    stringVal: 'Husband : "If you are done attending to Naman, pay attention to me
+      too!"'
 --- !u!114 &1774212845
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4994,7 +4999,8 @@ MonoBehaviour:
       Anjali : "I''m already getting a bit late for my work. It''l be really kind
       of you, please..."
 
-      Husband : "Fine, Fine! Will do."
+      Husband "Offscreen Left": "Fine fine! Will do. You go ahead and do your best
+      at work!"
 
       Anjali : "Thanks, love."
 
@@ -5054,7 +5060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: Where shall I start from?
+  storyText: ' Where shall I start from? Mother is sleeping anyway..so I think I''ll
+    see her in evening.'
   description: 
   character: {fileID: 552411600}
   portrait: {fileID: 0}
@@ -5080,7 +5087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 0
-  storyText: '"Oh come on Anjali! I just did that yesterday! Why dont you do it?!."'
+  storyText: '"Oh come on Anjali! I just did that yesterday! You should do it."'
   description: 
   character: {fileID: 1081381460}
   portrait: {fileID: 0}
@@ -5108,7 +5115,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 504.65494
     y: 514.0314
-    width: 128.12494
+    width: 141.7647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5184,7 +5191,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 495.4928
     y: 769.2039
-    width: 142.18744
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5194,6 +5201,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1774212842}
+  - {fileID: 1774212896}
   - {fileID: 1774212888}
 --- !u!114 &1774212854
 MonoBehaviour:
@@ -5274,7 +5282,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 51.248444
     y: 389.22095
-    width: 128.12494
+    width: 141.7647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5322,7 +5330,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.59337
     y: 501.2898
-    width: 148.43744
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5348,7 +5356,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -102.19974
     y: 501.2898
-    width: 148.43744
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5492,7 +5500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -93.578476
     y: 594.39307
-    width: 128.12494
+    width: 141.7647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5588,7 +5596,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -219.44052
     y: 697.8414
-    width: 148.43744
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5660,7 +5668,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 173.66264
     y: 590.94495
-    width: 128.12494
+    width: 141.7647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5732,7 +5740,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.17987
     y: 699.56555
-    width: 148.43744
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5758,7 +5766,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.9234314
     y: 701.2895
-    width: 148.43744
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5899,9 +5907,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 88.643
+    x: 86.29011
     y: 841.199
-    width: 148.43744
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5911,6 +5919,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1774212886}
+  - {fileID: 1774212894}
   - {fileID: 1774212887}
 --- !u!114 &1774212885
 MonoBehaviour:
@@ -5949,7 +5958,9 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'Anjali : "Now will you go get ready?"
 
-      Naman : "Okay.."'
+      Naman : "Okay.."
+
+      Naman "offscreen left" : '
 --- !u!114 &1774212887
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6075,6 +6086,149 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
+--- !u!114 &1774212893
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 0
+  storyText: She is about to start her job as a receptionist, and is quite excited
+    about it.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1774212894
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 89
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1708399578}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1774212895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 91
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1081381460}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1774212896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 552411600}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1774212897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 92
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1081381460}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!1 &1784870238
 GameObject:
   m_ObjectHideFlags: 0
