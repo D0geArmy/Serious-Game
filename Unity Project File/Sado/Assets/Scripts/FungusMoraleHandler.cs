@@ -13,5 +13,6 @@ public class FungusMoraleHandler : Command {
     public override void OnEnter()
     {
         FindObjectOfType<NodeManager>().GetComponent<NodeManager>().attributes.DecreaseMorale(amount);
+        Continue();
     }
 }
