@@ -59,7 +59,7 @@ public class NodeController : MonoBehaviour {
             if (Input.GetMouseButtonDown(0))
             {
                 //find the node player is on
-                currentNode = myManager.currentNode(NodeNo);
+                currentNode = myManager.currentNode(NodeNo , transform);
                 //find if th clicked node is part of the connected nodes in current node
                 foreach (NodeController nc in currentNode.connectedNodes)
                 {

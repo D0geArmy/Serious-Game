@@ -39,7 +39,7 @@ public class PlayerAttributes : MonoBehaviour {
     //movement
     public void movePlayer(bool mo, Vector3 des)
     {
-        previousNode = manager.currentNode(1);
+        previousNode = manager.currentNode(1,  transform);
         move = mo;
         destination = des;
     }

@@ -50,17 +50,17 @@ public class NodeManager : MonoBehaviour {
     }
 
     //Returns the current node the player is in
-    public NodeController currentNode(int nodeNo)
+    public NodeController currentNode(int tNodeNo, Transform t)
     {
         foreach(NodeController n in iNode)
         {
             Transform nt = n.gameObject.transform;
-            if(nt.position == player.position)
+            if(nt.position == t.position)
             {
-                nodeNo = n.NodeNo;
+                tNodeNo = n.NodeNo;
             }
         }
-        return iNode[nodeNo];
+        return iNode[tNodeNo];
     }
 
     public void ReachedEnd()
