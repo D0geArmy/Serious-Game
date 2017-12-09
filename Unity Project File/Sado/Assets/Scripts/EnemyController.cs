@@ -19,7 +19,6 @@ public class EnemyController : MonoBehaviour {
     bool move;
     Vector3 destination;
 
-
     // Use this for initialization
     void Start ()
     {
@@ -46,7 +45,8 @@ public class EnemyController : MonoBehaviour {
 
     public void MoveTo(Vector3 playerDes, bool canMove)
     {
-
+        move = canMove;
+        destination = playerDes;
     }
 
     void DrainMorale()
@@ -56,10 +56,13 @@ public class EnemyController : MonoBehaviour {
         myCurrentNode = manager.currentNode(1, attributes.gameObject.transform);
         foreach(NodeController myNC in myCurrentNode.connectedNodes)
         {
-            if (myNC.NodeNo == playerCurrentNode.NodeNo)
+            foreach (NodeController oneNCAway in myNC.connectedNodes)
             {
-                //drain morale?
-                attributes.DecreaseMorale(moraleAmount);
+                if (oneNCAway.NodeNo == playerCurrentNode.NodeNo)
+                {
+                    //drain morale
+                    attributes.DecreaseMorale(moraleAmount);
+                }
             }
         }
     }

@@ -21,6 +21,10 @@ public class NodeManager : MonoBehaviour {
     public Transform player;
     public int mor;
 
+    //stalker
+    public EnemyController stalker;
+    public EnemyController groper;
+
 	// Use this for initialization
 	void Start () {
         foreach (NodeController nc in iNode)
