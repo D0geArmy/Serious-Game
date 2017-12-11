@@ -276,8 +276,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 60424047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 365.5, y: 205.5, z: 0}
+  m_LocalScale: {x: 0.3425, y: 0.3425, z: 0.3425}
   m_Children:
   - {fileID: 1483895473}
   - {fileID: 892734002}
@@ -1063,11 +1063,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Anjal
+  nameText: Anjali
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 9cc0e329ffd69ff4aa27846c0dafefc6, type: 3}
+  - {fileID: 21300000, guid: fe6799163e526f84f84d598b01c4c925, type: 3}
+  - {fileID: 21300000, guid: 945d6cb639ad34049bed068d361d6c4e, type: 3}
+  - {fileID: 21300000, guid: 74f4b727baa17a241aef79b372bb889a, type: 3}
+  - {fileID: 21300000, guid: ec03709a08509c74392ae31c2bc976fd, type: 3}
+  - {fileID: 21300000, guid: acda9d881e87ba845be4de7aa9d73984, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: Player Character
@@ -2094,8 +2098,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 796654103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 365.5, y: 205.5, z: 0}
+  m_LocalScale: {x: 0.3425, y: 0.3425, z: 0.3425}
   m_Children:
   - {fileID: 259306554}
   - {fileID: 1317317578}
@@ -2787,6 +2791,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 9ff955f227e59dd4f848704dc858bfc1, type: 3}
+  - {fileID: 21300000, guid: 93865327b2c90544ea33a7d9edfa755b, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -3749,8 +3754,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651566327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 365.5, y: 205.5, z: 0}
+  m_LocalScale: {x: 0.3425, y: 0.3425, z: 0.3425}
   m_Children:
   - {fileID: 1501726900}
   m_Father: {fileID: 0}
@@ -3794,6 +3799,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: ea77f90e53a7d034bb5488ef2e7fef41, type: 3}
+  - {fileID: 21300000, guid: 489f357bae6eec44cb9e53066e5a0820, type: 3}
+  - {fileID: 21300000, guid: 5acf30cd0d64f684ebd2dda6b3a5ce32, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -4185,11 +4192,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 479.7516, y: -481.28}
+  scrollPos: {x: 821.4495, y: -242.79266}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8500001
+  zoom: 0.4300004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -4197,9 +4204,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1774212839}
+  - {fileID: 1774212816}
   selectedCommands:
-  - {fileID: 1774212845}
+  - {fileID: 1774212831}
   variables:
   - {fileID: 1774212826}
   - {fileID: 1774212827}
@@ -4241,9 +4248,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Anjali anjali left : Oh my god! It's the first day of my work today.
-      Been waiting for this day.. I'm so excited! \nAnjali anjali left2 : So many
-      things to do!"
+    stringVal: "Anjali idle left : Oh my god! It's the first day of my work today.
+      Been waiting for this day.. I'm so excited! \nAnjali left2 : So many things
+      to do!"
 --- !u!114 &1774212813
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4279,7 +4286,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.42542
     y: 71.418785
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4305,7 +4312,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248.94012
     y: 179.06192
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4331,7 +4338,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 496.68582
     y: 298.70447
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4361,7 +4368,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 257.0641
     y: 295.00522
-    width: 141.7647
+    width: 138.37201
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4409,7 +4416,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 42.887913
     y: 301.10773
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4665,7 +4672,7 @@ MonoBehaviour:
 
       Anjali : "Morning little Naman! It''s time for you to wake up, and go to school."
 
-      Naman kid right : "Nyeaah!
+      Naman sleepy right : "Nyeaah!
 
       Naman right2 :
 
@@ -4731,7 +4738,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 754.6882
     y: 298.06827
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4757,7 +4764,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 495.6198
     y: 423.11993
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4867,7 +4874,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 624.12463
     y: 625.21875
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4894,7 +4901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 372.30682
     y: 625.1001
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5115,7 +5122,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 504.65494
     y: 514.0314
-    width: 141.7647
+    width: 138.37201
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5191,7 +5198,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 495.4928
     y: 769.2039
-    width: 157.0588
+    width: 154.65106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5282,7 +5289,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 51.248444
     y: 389.22095
-    width: 141.7647
+    width: 138.37201
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5330,7 +5337,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.59337
     y: 501.2898
-    width: 165.2941
+    width: 161.6278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5356,7 +5363,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -102.19974
     y: 501.2898
-    width: 165.2941
+    width: 161.6278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5458,7 +5465,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'Anjali : "No bunny! You have to get up! Else you''ll be late to school."
 
-      Naman : *starts '
+      Naman crying : *starts '
 --- !u!114 &1774212865
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5500,7 +5507,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -93.578476
     y: 594.39307
-    width: 141.7647
+    width: 138.37201
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5596,7 +5603,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -219.44052
     y: 697.8414
-    width: 165.2941
+    width: 161.6278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5668,7 +5675,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 173.66264
     y: 590.94495
-    width: 141.7647
+    width: 138.37201
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5740,7 +5747,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.17987
     y: 699.56555
-    width: 165.2941
+    width: 161.6278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5766,7 +5773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.9234314
     y: 701.2895
-    width: 165.2941
+    width: 161.6278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5873,7 +5880,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'Anjali : "Candy! Yes! Guess it''ll all go to waste.."
 
-      Naman : "Ca...candy?"'
+      Naman sleepy : "Ca...candy?"'
 --- !u!114 &1774212883
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5909,7 +5916,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 86.29011
     y: 841.199
-    width: 165.2941
+    width: 161.6278
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6144,7 +6151,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1774212895
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774212807}
@@ -6173,7 +6180,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1774212896
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774212807}
@@ -6202,7 +6209,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1774212897
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774212807}
