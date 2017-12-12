@@ -59,7 +59,8 @@ public class NodeController : MonoBehaviour {
             if (Input.GetMouseButtonDown(0))
             {
                 //find the node player is on
-                currentNode = myManager.currentNode(NodeNo , transform);
+                currentNode = myManager.currentNode(NodeNo , Player);
+                print(currentNode);
                 //find if th clicked node is part of the connected nodes in current node
                 foreach (NodeController nc in currentNode.connectedNodes)
                 {
@@ -78,36 +79,39 @@ public class NodeController : MonoBehaviour {
 
     void UpdateObjective()
     {
-        isObjectiveOver = true;
-        sTimer.DecreaseTime(1);
-        if (isPrimObjective)
+        if (!isObjectiveOver)
         {
-            //trigger for prim obj narrative sequence here
-            if (isEnd)
+            isObjectiveOver = true;
+            sTimer.DecreaseTime(0);
+            if (isPrimObjective)
             {
-                myManager.disabled = true;
-                //trigger end here
-                myManager.ReachedEnd();
-                flowchart.ExecuteBlock("Work");
-            }
-            else
-            {
-                if (flowchart.GetBooleanVariable("isMorning"))
+                //trigger for prim obj narrative sequence here
+                if (isEnd)
                 {
-                    flowchart.ExecuteBlock("School");
+                    if (flowchart.GetBooleanVariable("isMorning"))
+                    {
+                        //myManager.disabled = true;
+                        //trigger end here
+                        //myManager.ReachedEnd();
+                        flowchart.ExecuteBlock("Work");
+                    }
+                    else
+                    {
+                        flowchart.ExecuteBlock("Home");
+                    }
                 }
                 else
                 {
-                    flowchart.ExecuteBlock("Home");
+                        flowchart.ExecuteBlock("School");
                 }
             }
-        }
-        else
-        {
-            myManager.disabled = true;
-            //trigger for seco obj narrative sequence here
-            flowchart.SetIntegerVariable("CurrObj", secObjValue);
-            flowchart.ExecuteBlock("SecondayObj");
+            else
+            {
+                myManager.disabled = true;
+                //trigger for seco obj narrative sequence here
+                flowchart.SetIntegerVariable("CurrObj", secObjValue);
+                flowchart.ExecuteBlock("SecondayObj");
+            }
         }
     }
 

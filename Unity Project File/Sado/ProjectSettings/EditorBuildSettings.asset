@@ -12,5 +12,11 @@ EditorBuildSettings:
     path: Assets/Scene/Day One - Morning.unity
     guid: ef285a08e075b2c4bb9967a998f1bc20
   - enabled: 1
-    path: Assets/Scene/Level test.unity
+    path: Assets/Scene/Day One Travel.unity
     guid: bde57dac7c661d54d85caca28eb9ac58
+  - enabled: 1
+    path: Assets/Scene/Day One Evening.unity
+    guid: 66df86d61bb66f543833ca3ad91024f9
+  - enabled: 1
+    path: Assets/Scene/Day Two Morning.unity
+    guid: 9287b8656fa6f1f41a6518d440eecfc5

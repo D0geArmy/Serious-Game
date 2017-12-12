@@ -10,11 +10,12 @@ public class NodeManager : MonoBehaviour {
 
     //Nodemanager functionalities
     public MySceneManager scene;
+    [HideInInspector]
     public bool disabled = false;
     [Tooltip("Add all the nodes here")]
     public NodeController[] iNode;
-    NodeController[] Objective;
     NodeController endGoal;
+    Counter counter;
 
     //player related
     public PlayerAttributes attributes;
@@ -27,6 +28,7 @@ public class NodeManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        counter = scene.sceneCounter;
         foreach (NodeController nc in iNode)
         {
             if (nc.isEnd)
@@ -50,6 +52,16 @@ public class NodeManager : MonoBehaviour {
             {
                 ReachedEnd();
             }
+        }
+
+        //counter late time setup
+        if(counter.totalTime <= 0)
+        {
+            flowchart.SetBooleanVariable("isLate", true);
+        }
+        else
+        {
+            flowchart.SetBooleanVariable("isLate", false);
         }
     }
 

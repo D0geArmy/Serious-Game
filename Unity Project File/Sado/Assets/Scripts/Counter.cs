@@ -25,7 +25,7 @@ public class Counter : MonoBehaviour {
         else
         {
             minutes = totalTime / 60;
-            seconds = totalTime % 60;
+            seconds = totalTime;
             if (minutes < 10)
             {
                 disMinutes = "0" + minutes.ToString();
@@ -38,10 +38,7 @@ public class Counter : MonoBehaviour {
             {
                 disSeconds = "0" + Mathf.RoundToInt(seconds).ToString();
             }
-            else
-            {
-                disSeconds = seconds.ToString();
-            }
+            disSeconds = seconds.ToString();
         }
     }
 
@@ -57,6 +54,6 @@ public class Counter : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 250, 100), disMinutes + ":" + disSeconds);
+        GUI.Label(new Rect(10, 6, 250, 100), "No of Nodes left: " + disSeconds);
     }
 }
