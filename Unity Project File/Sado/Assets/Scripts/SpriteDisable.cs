@@ -6,6 +6,8 @@ public class SpriteDisable : MonoBehaviour {
 
     int enableTime;
     int dissableTime;
+    [SerializeField]
+    GameObject title;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +18,7 @@ public class SpriteDisable : MonoBehaviour {
     {
         Debug.Log("disable");
         gameObject.active = false;
+        title.active = false;
         enableTime = Mathf.RoundToInt(Random.Range (1, 4));
         Invoke("enableSprite", enableTime/2);
     }
@@ -24,6 +27,7 @@ public class SpriteDisable : MonoBehaviour {
     {
         Debug.Log("enable");
         gameObject.active = true;
+        title.active = true;
         dissableTime = Mathf.RoundToInt(Random.Range(2, 3));
         Invoke("disableSprite", dissableTime/2);
     }

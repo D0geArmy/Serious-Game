@@ -60,7 +60,6 @@ public class NodeController : MonoBehaviour {
             {
                 //find the node player is on
                 currentNode = myManager.currentNode(NodeNo , Player);
-                print(currentNode);
                 //find if th clicked node is part of the connected nodes in current node
                 foreach (NodeController nc in currentNode.connectedNodes)
                 {

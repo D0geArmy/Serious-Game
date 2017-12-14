@@ -29,7 +29,7 @@ public class PlayerAttributes : MonoBehaviour {
             float distance = Vector3.Distance(transform.position, destination);
             float speed = 1 / distance;
             transform.position = Vector3.Lerp(transform.position, destination, speed);
-            manager.stalker.MoveTo(previousNode.gameObject.transform.position, true);
+            
             if (transform.position == destination)
             {
                 move = false;
@@ -40,6 +40,7 @@ public class PlayerAttributes : MonoBehaviour {
     //movement
     public void movePlayer(bool mo, Vector3 des)
     {
+        manager.stalker.MoveTo(previousNode.gameObject.transform.position, mo);
         previousNode = manager.currentNode(1,  transform);
         move = mo;
         destination = des;

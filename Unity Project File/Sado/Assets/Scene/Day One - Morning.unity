@@ -276,8 +276,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 60424047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 363.5, y: 204.5, z: 0}
-  m_LocalScale: {x: 0.34083334, y: 0.34083334, z: 0.34083334}
+  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
+  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
   m_Children:
   - {fileID: 1483895473}
   - {fileID: 892734002}
@@ -2512,8 +2512,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 796654103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 363.5, y: 204.5, z: 0}
-  m_LocalScale: {x: 0.34083334, y: 0.34083334, z: 0.34083334}
+  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
+  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
   m_Children:
   - {fileID: 259306554}
   - {fileID: 1317317578}
@@ -4316,8 +4316,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651566327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 363.5, y: 204.5, z: 0}
-  m_LocalScale: {x: 0.34083334, y: 0.34083334, z: 0.34083334}
+  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
+  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
   m_Children:
   - {fileID: 1501726900}
   m_Father: {fileID: 0}
@@ -4757,7 +4757,6 @@ GameObject:
   - component: {fileID: 1774212886}
   - component: {fileID: 1774212887}
   - component: {fileID: 1774212888}
-  - component: {fileID: 1774212847}
   - component: {fileID: 1774212890}
   - component: {fileID: 1774212891}
   - component: {fileID: 1774212892}
@@ -4833,7 +4832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 730.24475, y: 126.5588}
+  scrollPos: {x: 830.2447, y: -150.36404}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -4845,7 +4844,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1774212809}
+  - {fileID: 1774212816}
   selectedCommands: []
   variables:
   - {fileID: 1774212826}
@@ -4889,8 +4888,7 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Anjali idle left : Oh my god! It's the first day of my work today.
-      Been waiting for this day.. I'm so excited! \nAnjali left2 : So many things
-      to do!"
+      Been waiting for this day.. I'm so excited! \nAnjali left2 : "
 --- !u!114 &1774212813
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5127,13 +5125,13 @@ MonoBehaviour:
     her mother-in-law.\r\nShe loves her family and taking care of them is her first
     priority."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 692300086}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 0
+  fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -5670,30 +5668,6 @@ MonoBehaviour:
     stringVal: 'Anjali : "But that''s all the help you ever do around the house."
 
       Husband : "Wow! Okay then.. I''ll get going, you can help yourself and others"'
---- !u!114 &1774212847
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774212807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 84
-  indentLevel: 0
-  text: 0
-  description: 
-  targetBlock: {fileID: 0}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 796654104}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &1774212848
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5707,15 +5681,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: ' Where shall I start from? Mother is sleeping anyway..so I think I''ll
-    see her in evening.'
+  storyText: So many things to do! Where shall I start from? Mother is sleeping anyway..so
+    I think I'll see her in evening.
   description: 
   character: {fileID: 552411600}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
-  extendPrevious: 1
+  extendPrevious: 0
   fadeWhenDone: 0
   waitForClick: 0
   stopVoiceover: 1
@@ -5760,8 +5734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 504.65494
-    y: 514.0314
+    x: 506.578
+    y: 515.95447
     width: 142.30762
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5939,7 +5913,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1774212861}
-  - {fileID: 1774212847}
   - {fileID: 1774212863}
   - {fileID: 1774212862}
 --- !u!114 &1774212858
@@ -6105,7 +6078,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'Anjali : "No bunny! You have to get up! Else you''ll be late to school."
 
-      Naman crying : *starts '
+      Naman crying : '
 --- !u!114 &1774212865
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6119,7 +6092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: crying*
+  storyText: '*starts crying*'
   description: 
   character: {fileID: 1708399578}
   portrait: {fileID: 0}
@@ -6145,7 +6118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -93.578476
+    x: -91.6554
     y: 594.39307
     width: 142.30762
     height: 40
@@ -6273,7 +6246,7 @@ MonoBehaviour:
 
       Anjali : "Along with some..."
 
-      Anjali : What should '
+      Anjali :  '
 --- !u!114 &1774212872
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6287,7 +6260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 67
   indentLevel: 0
-  storyText: I offer him?
+  storyText: What should I offer him?
   description: 
   character: {fileID: 552411600}
   portrait: {fileID: 0}
@@ -6648,7 +6621,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1774212889
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774212807}
@@ -6744,13 +6717,13 @@ MonoBehaviour:
   storyText: She is about to start her job as a receptionist, and is quite excited
     about it.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 692300086}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 0
+  fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -6873,7 +6846,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1774212898
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774212807}
@@ -7559,8 +7532,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1908405965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 363.5, y: 204.5, z: 0}
-  m_LocalScale: {x: 0.34083334, y: 0.34083334, z: 0.34083334}
+  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
+  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
   m_Children:
   - {fileID: 427745405}
   m_Father: {fileID: 0}
