@@ -40,7 +40,13 @@ public class PlayerAttributes : MonoBehaviour {
     //movement
     public void movePlayer(bool mo, Vector3 des)
     {
-        manager.stalker.MoveTo(previousNode.gameObject.transform.position, mo);
+        if (previousNode != null)
+        {
+            if (manager.stalker != null)
+            {
+                manager.stalker.MoveTo(previousNode.gameObject.transform.position, true);
+            }
+        }
         previousNode = manager.currentNode(1,  transform);
         move = mo;
         destination = des;

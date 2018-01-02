@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(CircleCollider2D))]
 public class NodeController : MonoBehaviour {
 
     Flowchart flowchart;
@@ -109,7 +109,7 @@ public class NodeController : MonoBehaviour {
                 myManager.disabled = true;
                 //trigger for seco obj narrative sequence here
                 flowchart.SetIntegerVariable("CurrObj", secObjValue);
-                flowchart.ExecuteBlock("SecondayObj");
+                flowchart.ExecuteBlock("SecondaryObj");
             }
         }
     }

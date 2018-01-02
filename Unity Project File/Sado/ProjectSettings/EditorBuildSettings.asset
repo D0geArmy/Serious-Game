@@ -20,3 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Day Two Morning.unity
     guid: 9287b8656fa6f1f41a6518d440eecfc5
+  - enabled: 1
+    path: Assets/Scene/Day Two Evening.unity
+    guid: 6275450107578a44eba10e2af9bd0b09
+  - enabled: 1
+    path: Assets/Scene/Day Five Morning.unity
+    guid: c2763531cdf60e9418d290b0724d3e45
+  - enabled: 1
+    path: Assets/Scene/Day Three Evening.unity
+    guid: 9a7433e35b3015042a1eff946a7f7e69
+  - enabled: 1
+    path: Assets/Scene/Day Four Morning.unity
+    guid: b23d0fc54b47a014bb9136acc512365d
+  - enabled: 1
+    path: Assets/Scene/Day Four Evening.unity
+    guid: 32d14b8f64db172489d3d25e9f01e6ae
+  - enabled: 1
+    path: Assets/Scene/Day Three Morning.unity
+    guid: 1bfcea27e18f77945a5048ac476b225f
