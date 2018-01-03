@@ -26,8 +26,12 @@ public class NodeManager : MonoBehaviour {
     public EnemyController stalker;
     public EnemyController groper;
 
-	// Use this for initialization
-	void Start () {
+    //minigame
+    public int checkforred = 0;
+    string continueBlock;
+
+    // Use this for initialization
+    void Start() {
         counter = scene.sceneCounter;
         foreach (NodeController nc in iNode)
         {
@@ -63,6 +67,12 @@ public class NodeManager : MonoBehaviour {
         {
             flowchart.SetBooleanVariable("isLate", false);
         }
+
+        //minigame state
+        if(checkforred == 4)
+        {
+            flowchart.ExecuteBlock(continueBlock);
+        }
     }
 
     //Returns the current node the player is in
@@ -82,5 +92,18 @@ public class NodeManager : MonoBehaviour {
     public void ReachedEnd()
     {
 
+    }
+
+    //mini game timer and sequencing
+    public void startMiniGame(float miniTime)
+    {
+        continueBlock = flowchart.GetStringVariable("nextBlock");
+        StartCoroutine(minTimer(miniTime));
+    }
+
+    IEnumerator minTimer(float time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+        flowchart.ExecuteBlock("MiniGame TimeOver");
     }
 }

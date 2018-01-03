@@ -8,7 +8,7 @@ using UnityEngine;
 public class BoxControl : MonoBehaviour 
 {	
 	[SerializeField]
-	public MiniGameManager mgm;
+	public NodeManager mgm;
 
 
 	//Transform Poition of the Particle System
@@ -28,50 +28,55 @@ public class BoxControl : MonoBehaviour
 	// To initiate the material renderer function of unity
 	Renderer rend;
 
-	// Use this for initialization
-	void Start () 
-	{
-		rend = GetComponent<Renderer> ();
-		rend.enabled = true;
+    public int id;
+
+    // Use this for initialization
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+    }
+
+    void OnMouseDown()
+    {
+        //		if (currentcolor < 1) 
+        //		{
+        //			currentcolor = +1;
+        //			mgm.checkforred -= 1;
+        //		} 
+
+        if (currentcolor > 0)
+        {
+            currentcolor -= 1;
+            mgm.checkforred += 1;
+            //effect.Play();
+        }
+
+        //triggers for dialogues
+        if(gameObject.name == "B0" + id.ToString())
+        {
+            int temp = id / 2;
+            print(temp);
+            mgm.flowchart.ExecuteBlock("MiniGame " + temp.ToString());
+        }
+    }
 
 
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        if (currentcolor == 0)
+        {
+            rend.sharedMaterial = red;
+        }
+        else if (currentcolor == 1)
+        {
+            rend.sharedMaterial = blue;
+        }
 
-	void OnMouseDown ()
-	{
-//		if (currentcolor < 1) 
-//		{
-//			currentcolor = +1;
-//			mgm.checkforred -= 1;
-//		} 
-
-		 if (currentcolor > 0) 
-		{
-			currentcolor -= 1;
-			mgm.checkforred += 1;
-			effect.Play ();
-
-		}
-	}
-
-
-	// Update is called once per frame
-	void Update () 
-	{
-		if (currentcolor == 0) 
-		{
-			rend.sharedMaterial = red;
-		} 
-
-		else if (currentcolor == 1) 
-		{
-			rend.sharedMaterial = blue;
-		}
-
-		if (mgm.checkforred == 4) 
-		{
-			Destroy (gameObject);
-			Debug.Log ("You won, sex please");
-		}
-	}
+        if (mgm.checkforred == 4)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
