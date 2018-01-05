@@ -927,8 +927,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 216476412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
-  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 1141835274}
   - {fileID: 1697498587}
@@ -3723,8 +3723,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 544276903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
-  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 86943407}
   m_Father: {fileID: 0}
@@ -6499,8 +6499,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1114958169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
-  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 2124919167}
   m_Father: {fileID: 0}
@@ -7168,6 +7168,7 @@ MonoBehaviour:
   mor: 0
   stalker: {fileID: 286633811}
   groper: {fileID: 0}
+  checkforred: 0
 --- !u!1001 &1247128790
 Prefab:
   m_ObjectHideFlags: 0
@@ -7915,13 +7916,10 @@ GameObject:
   - component: {fileID: 1357524492}
   - component: {fileID: 1357524491}
   - component: {fileID: 1357524494}
-  - component: {fileID: 1357524495}
   - component: {fileID: 1357524496}
   - component: {fileID: 1357524498}
   - component: {fileID: 1357524497}
   - component: {fileID: 1357524499}
-  - component: {fileID: 1357524500}
-  - component: {fileID: 1357524501}
   - component: {fileID: 1357524502}
   - component: {fileID: 1357524503}
   - component: {fileID: 1357524504}
@@ -7955,15 +7953,26 @@ GameObject:
   - component: {fileID: 1357524532}
   - component: {fileID: 1357524534}
   - component: {fileID: 1357524533}
-  - component: {fileID: 1357524536}
   - component: {fileID: 1357524537}
   - component: {fileID: 1357524535}
   - component: {fileID: 1357524538}
   - component: {fileID: 1357524539}
   - component: {fileID: 1357524540}
   - component: {fileID: 1357524541}
+  - component: {fileID: 1357524500}
+  - component: {fileID: 1357524495}
+  - component: {fileID: 1357524544}
+  - component: {fileID: 1357524501}
+  - component: {fileID: 1357524545}
+  - component: {fileID: 1357524546}
+  - component: {fileID: 1357524547}
+  - component: {fileID: 1357524548}
+  - component: {fileID: 1357524550}
+  - component: {fileID: 1357524549}
+  - component: {fileID: 1357524552}
+  - component: {fileID: 1357524551}
   - component: {fileID: 1357524542}
-  - component: {fileID: 1357524543}
+  - component: {fileID: 1357524553}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -7984,7 +7993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -290, y: 16}
+  scrollPos: {x: -277, y: 11}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -7995,14 +8004,15 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1357524508}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1357524496}
   - {fileID: 1357524498}
   - {fileID: 1357524497}
   - {fileID: 1357524521}
+  - {fileID: 1357524546}
+  - {fileID: 1357524547}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -8052,10 +8062,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1357524491}
   commandList:
-  - {fileID: 1357524500}
-  - {fileID: 1357524495}
   - {fileID: 1357524494}
-  - {fileID: 1357524501}
   - {fileID: 1357524499}
 --- !u!4 &1357524493
 Transform:
@@ -8083,8 +8090,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  duration: 1
-  fadeOut: 1
+  duration: 0
+  fadeOut: 0
   targetView: {fileID: 221882015}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
@@ -8098,20 +8105,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1357524489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 2
+  itemId: 50
   indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: 'Saloni idle right : "Hey are you okay?"
-
-      Anjali idle left : "Does it look like I''m okay?"
-
-      Saloni : "I saw what happened..atleast a glimpse of it."
-
-      Narrator : Anjali and Saloni enjoyed their evening'
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 709691297}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
 --- !u!114 &1357524496
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8152,7 +8157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: Var
+  key: isMorning
   value: 0
 --- !u!114 &1357524499
 MonoBehaviour:
@@ -8189,18 +8194,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1357524489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 0}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
+  nodeRect:
+    serializedVersion: 2
+    x: 722
+    y: 147
+    width: 153
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 49
+  blockName: Day 3 - Evening 3
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1357524495}
+  - {fileID: 1357524545}
+  - {fileID: 1357524544}
+  - {fileID: 1357524501}
 --- !u!114 &1357524501
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8212,7 +8225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 5
+  itemId: 52
   indentLevel: 0
   storyText: Time to pick up bunny!
   description: 
@@ -8503,7 +8516,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 1
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 1357524500}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -8522,8 +8535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 830
-    y: 147
+    x: 900
+    y: 143
     width: 153
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8538,6 +8551,7 @@ MonoBehaviour:
   - {fileID: 1357524517}
   - {fileID: 1357524518}
   - {fileID: 1357524519}
+  - {fileID: 1357524548}
 --- !u!114 &1357524515
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8664,9 +8678,13 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1357524527}
+  - {fileID: 1357524550}
   - {fileID: 1357524530}
   - {fileID: 1357524531}
   - {fileID: 1357524529}
+  - {fileID: 1357524549}
+  - {fileID: 1357524552}
+  - {fileID: 1357524551}
   - {fileID: 1357524528}
 --- !u!114 &1357524521
 MonoBehaviour:
@@ -8854,8 +8872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 34
-  indentLevel: 1
-  storyText: I have to pickup Naman first. He must be scared.
+  indentLevel: 2
+  storyText: Have to go to the Zoo first... Naman would love that.
   description: 
   character: {fileID: 1356203715}
   portrait: {fileID: 0}
@@ -8880,7 +8898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 31
-  indentLevel: 1
+  indentLevel: 2
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 1357524532}
   startLabel:
@@ -8900,7 +8918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 35
-  indentLevel: 0
+  indentLevel: 1
 --- !u!114 &1357524532
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8926,14 +8944,13 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1357524533}
-  - {fileID: 1357524543}
-  - {fileID: 1357524542}
+  - {fileID: 1357524534}
+  - {fileID: 1357524553}
   - {fileID: 1357524535}
   - {fileID: 1357524538}
-  - {fileID: 1357524536}
   - {fileID: 1357524539}
   - {fileID: 1357524540}
-  - {fileID: 1357524534}
+  - {fileID: 1357524542}
   - {fileID: 1357524537}
   - {fileID: 1357524541}
 --- !u!114 &1357524533
@@ -8978,7 +8995,7 @@ MonoBehaviour:
   indentLevel: 0
   duration: 0.5
   fadeOut: 1
-  targetView: {fileID: 260208365}
+  targetView: {fileID: 801564651}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
@@ -9009,20 +9026,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1357524536
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357524489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 40
-  indentLevel: 0
-  sayDialog: {fileID: 544276908}
 --- !u!114 &1357524537
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9120,7 +9123,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &1357524541
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357524489}
@@ -9131,7 +9134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
-  storyText: Why does he know?...
+  storyText: How does he know?...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9146,21 +9149,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1357524542
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357524489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 47
-  indentLevel: 0
-  sayDialog: {fileID: 1114958174}
---- !u!114 &1357524543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357524489}
@@ -9169,15 +9158,196 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 48
+  itemId: 59
   indentLevel: 0
-  duration: 1
+  duration: 0.5
   fadeOut: 1
   targetView: {fileID: 260208365}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
+--- !u!114 &1357524544
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Saloni idle right : \nAnjali idle left :\nSaloni : \"Hey are you okay?\"\nAnjali
+      : \"Does it look like I'm okay?\"\nSaloni : \"I saw what happened..atleast a
+      glimpse of it.\"\nAnjali \"Offscreen Left\" :\nSaloni \"Offscreen Left\" : \nNarrator
+      : Anjali and Saloni talked about their day and enjoyed their evening."
+--- !u!114 &1357524545
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 53
+  indentLevel: 0
+  sayDialog: {fileID: 544276908}
+--- !u!114 &1357524546
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Morale
+  value: 0
+--- !u!114 &1357524547
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: toZoo
+  value: 0
+--- !u!114 &1357524548
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 54
+  indentLevel: 0
+  variable: {fileID: 1357524547}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &1357524549
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 56
+  indentLevel: 1
+--- !u!114 &1357524550
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 55
+  indentLevel: 1
+  compareOperator: 0
+  variable: {fileID: 1357524547}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &1357524551
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 1
+  storyText: I have to pickup Naman first. He must be scared.
+  description: 
+  character: {fileID: 1356203715}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1357524552
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+--- !u!114 &1357524553
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357524489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 61
+  indentLevel: 0
+  sayDialog: {fileID: 544276908}
 --- !u!1 &1358113733
 GameObject:
   m_ObjectHideFlags: 0
@@ -10195,8 +10365,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519126063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 372.5, y: 209.5, z: 0}
-  m_LocalScale: {x: 0.34916666, y: 0.34916666, z: 0.34916666}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 1535618493}
   - {fileID: 1261561334}

@@ -655,6 +655,50 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 135139256}
+--- !u!1 &173805035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 173805037}
+  - component: {fileID: 173805036}
+  m_Layer: 0
+  m_Name: View
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &173805036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: e0d427add844a4d9faf970a3afa07583,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173805035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewSize: 1
+  primaryAspectRatio: {x: 4, y: 3}
+  secondaryAspectRatio: {x: 2, y: 1}
+--- !u!4 &173805037
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173805035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -52.6, y: 17.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229495460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,7 +1467,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625190699
 GameObject:
@@ -1611,7 +1655,7 @@ Transform:
   m_Children:
   - {fileID: 1882115957}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649026765
 GameObject:
@@ -1842,7 +1886,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693217730
 GameObject:
@@ -2636,7 +2680,7 @@ RectTransform:
   - {fileID: 259306554}
   - {fileID: 1317317578}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3411,7 +3455,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1109850457
 GameObject:
@@ -3776,7 +3820,7 @@ Transform:
   m_Children:
   - {fileID: 704824328}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449017610
 GameObject:
@@ -3821,7 +3865,7 @@ Transform:
   m_Children:
   - {fileID: 833449188}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477027579
 GameObject:
@@ -4033,7 +4077,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1501726895
 GameObject:
@@ -4210,7 +4254,7 @@ Transform:
   m_Children:
   - {fileID: 60424048}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626948701
 GameObject:
@@ -4332,7 +4376,7 @@ Transform:
   m_Children:
   - {fileID: 791111890}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651566327
 GameObject:
@@ -4602,7 +4646,7 @@ RectTransform:
   m_Children:
   - {fileID: 1501726900}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4658,7 +4702,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713198049
 GameObject:
@@ -5065,11 +5109,12 @@ GameObject:
   - component: {fileID: 1774212908}
   - component: {fileID: 1774212907}
   - component: {fileID: 1774212906}
-  - component: {fileID: 1774212905}
   - component: {fileID: 1774212904}
   - component: {fileID: 1774212903}
   - component: {fileID: 1774212902}
   - component: {fileID: 1774212901}
+  - component: {fileID: 1774212920}
+  - component: {fileID: 1774212921}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -5116,10 +5161,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1774212808}
   commandList:
+  - {fileID: 1774212892}
   - {fileID: 1774212898}
+  - {fileID: 1774212921}
   - {fileID: 1774212822}
   - {fileID: 1774212893}
-  - {fileID: 1774212892}
+  - {fileID: 1774212920}
   - {fileID: 1774212889}
   - {fileID: 1774212813}
 --- !u!114 &1774212810
@@ -5135,11 +5182,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 147.55225, y: -231.13326}
+  scrollPos: {x: 120.19989, y: -254.18292}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.5200004
+  zoom: 0.6100003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5147,9 +5194,13 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
+  - {fileID: 1774212919}
+  - {fileID: 1774212916}
+  - {fileID: 1774212913}
   - {fileID: 1774212910}
-  selectedCommands:
-  - {fileID: 1774212909}
+  - {fileID: 1774212904}
+  - {fileID: 1774212847}
+  selectedCommands: []
   variables:
   - {fileID: 1774212826}
   - {fileID: 1774212827}
@@ -5174,7 +5225,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1774212812
 MonoBehaviour:
@@ -5228,7 +5279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.42542
     y: 71.418785
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5254,7 +5305,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248.94012
     y: 179.06192
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5280,7 +5331,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 496.68582
     y: 298.70447
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5310,7 +5361,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 257.0641
     y: 295.00522
-    width: 142.30762
+    width: 131.96716
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5358,7 +5409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 42.887913
     y: 301.10773
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5680,7 +5731,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 754.6882
     y: 298.06827
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5706,7 +5757,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 495.6198
     y: 423.11993
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5816,7 +5867,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 624.12463
     y: 625.21875
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5843,7 +5894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 372.30682
     y: 625.1001
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5987,7 +6038,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1146.278
     y: 606.38824
-    width: 123.076866
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6065,7 +6116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 506.578
     y: 515.95447
-    width: 142.30762
+    width: 131.96716
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6141,7 +6192,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 493.56973
     y: 769.2039
-    width: 161.53838
+    width: 146.72125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6232,7 +6283,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 51.248444
     y: 389.22095
-    width: 142.30762
+    width: 131.96716
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6279,7 +6330,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.59337
     y: 501.2898
-    width: 169.23068
+    width: 153.27863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6305,7 +6356,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -102.19974
     y: 501.2898
-    width: 169.23068
+    width: 153.27863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6449,7 +6500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -91.6554
     y: 594.39307
-    width: 142.30762
+    width: 131.96716
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6545,7 +6596,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -219.44052
     y: 697.8414
-    width: 169.23068
+    width: 153.27863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6617,7 +6668,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 173.66264
     y: 590.94495
-    width: 142.30762
+    width: 131.96716
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6689,7 +6740,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.17987
     y: 699.56555
-    width: 169.23068
+    width: 153.27863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6715,7 +6766,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.9234314
     y: 701.2895
-    width: 169.23068
+    width: 153.27863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6858,7 +6909,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 86.29011
     y: 841.199
-    width: 169.23068
+    width: 153.27863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7023,10 +7074,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 87
   indentLevel: 0
-  duration: 1
+  duration: 0
   fadeOut: 0
-  targetView: {fileID: 1641416591}
-  waitUntilFinished: 1
+  targetView: {fileID: 173805036}
+  waitUntilFinished: 0
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
@@ -7308,7 +7359,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 869.4349
     y: 505.68146
-    width: 176.92297
+    width: 164.75403
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7320,19 +7371,6 @@ MonoBehaviour:
   - {fileID: 1774212903}
   - {fileID: 1774212902}
   - {fileID: 1774212901}
---- !u!114 &1774212905
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774212807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1774212910}
-  waitForFrames: 1
 --- !u!114 &1774212906
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7476,14 +7514,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 889.6757
     y: 443.54163
-    width: 144.2307
+    width: 138.52454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 368
   blockName: MiniGame Start
   description: 
-  eventHandler: {fileID: 1774212905}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1774212909}
   - {fileID: 1774212908}
@@ -7514,7 +7552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 360
+  itemId: 379
   indentLevel: 0
   storyText: Number of people staying
   description: 
@@ -7544,7 +7582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1144.1008
     y: 536.79486
-    width: 123.076866
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7609,7 +7647,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1144.0884
     y: 462.19562
-    width: 123.076866
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7674,7 +7712,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1139.6173
     y: 393.57007
-    width: 123.076866
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7684,6 +7722,52 @@ MonoBehaviour:
   eventHandler: {fileID: 1774212917}
   commandList:
   - {fileID: 1774212918}
+--- !u!114 &1774212920
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 380
+  indentLevel: 0
+  duration: 1
+  fadeOut: 0
+  targetView: {fileID: 1641416591}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+--- !u!114 &1774212921
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774212807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 381
+  indentLevel: 0
+  storyText: DAY 1 - It's a new day
+  description: 
+  character: {fileID: 692300086}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1784870238
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,7 +8520,7 @@ RectTransform:
   m_Children:
   - {fileID: 427745405}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8593,7 +8677,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2112163845
 GameObject:
@@ -8634,7 +8718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114013008
 GameObject:

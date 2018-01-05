@@ -5770,7 +5770,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949395487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1493521192}
@@ -7959,9 +7959,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1222213894}
-  selectedCommands:
-  - {fileID: 1222213925}
+  - {fileID: 1222213882}
+  selectedCommands: []
   variables:
   - {fileID: 1222213885}
   - {fileID: 1222213884}
@@ -8892,7 +8891,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1222213923
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -8918,7 +8917,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1222213924
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -8932,7 +8931,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1222213925
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -8958,7 +8957,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1222213926
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -8971,7 +8970,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1222213927
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -8984,7 +8983,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1222213928
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -9011,7 +9010,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1222213929
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222213879}
@@ -9785,6 +9784,7 @@ MonoBehaviour:
   mor: 0
   stalker: {fileID: 1493521191}
   groper: {fileID: 0}
+  checkforred: 0
 --- !u!1 &1368358906
 GameObject:
   m_ObjectHideFlags: 0

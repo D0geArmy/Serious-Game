@@ -2227,7 +2227,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223325969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 279008937}
@@ -2644,6 +2644,16 @@ Prefab:
         type: 2}
       propertyPath: isObjectiveOver
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: secObjValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: isSecoObjective
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
@@ -11143,10 +11153,6 @@ GameObject:
   - component: {fileID: 1548472706}
   - component: {fileID: 1548472753}
   - component: {fileID: 1548472751}
-  - component: {fileID: 1548472755}
-  - component: {fileID: 1548472754}
-  - component: {fileID: 1548472756}
-  - component: {fileID: 1548472757}
   - component: {fileID: 1548472758}
   - component: {fileID: 1548472759}
   - component: {fileID: 1548472761}
@@ -11313,7 +11319,6 @@ GameObject:
   - component: {fileID: 1548472876}
   - component: {fileID: 1548472866}
   - component: {fileID: 1548472862}
-  - component: {fileID: 1548472863}
   - component: {fileID: 1548472879}
   - component: {fileID: 1548472880}
   - component: {fileID: 1548472881}
@@ -11324,6 +11329,9 @@ GameObject:
   - component: {fileID: 1548472843}
   - component: {fileID: 1548472859}
   - component: {fileID: 1548472844}
+  - component: {fileID: 1548472863}
+  - component: {fileID: 1548472871}
+  - component: {fileID: 1548472883}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -11344,8 +11352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -151.90756, y: -242.99432}
-  variablesScrollPos: {x: 0, y: 38}
+  scrollPos: {x: -159.72003, y: -614.8695}
+  variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 402
   zoom: 0.6399999
@@ -11356,13 +11364,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1548472738}
-  - {fileID: 1548472861}
-  - {fileID: 1548472874}
-  - {fileID: 1548472873}
-  - {fileID: 1548472875}
-  - {fileID: 1548472879}
-  selectedCommands: []
+  - {fileID: 1548472752}
+  selectedCommands:
+  - {fileID: 1548472850}
   variables:
   - {fileID: 1548472759}
   - {fileID: 1548472781}
@@ -11414,8 +11418,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 76.76287
-    y: 161.08559
+    x: 83.01287
+    y: 162.64809
     width: 142.1875
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11478,7 +11482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -43.263706
+    x: -30.763706
     y: 415.55682
     width: 142.1875
     height: 40
@@ -11505,8 +11509,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 84.33369
-    y: 327.28287
+    x: 89.02119
+    y: 328.84537
     width: 135.9375
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11579,8 +11583,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 209.1497
-    y: 414.82794
+    x: 199.7747
+    y: 416.39044
     width: 142.1875
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11648,7 +11652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 69.98421
+    x: 73.10921
     y: 71.26582
     width: 156.25002
     height: 40
@@ -11657,15 +11661,17 @@ MonoBehaviour:
   itemId: 0
   blockName: Game start Morning
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1548472863}
   commandList:
   - {fileID: 1548472676}
-  - {fileID: 1548472832}
+  - {fileID: 1548472883}
+  - {fileID: 1548472871}
   - {fileID: 1548472834}
   - {fileID: 1548472587}
+  - {fileID: 1548472833}
+  - {fileID: 1548472832}
   - {fileID: 1548472585}
   - {fileID: 1548472595}
-  - {fileID: 1548472833}
   - {fileID: 1548472719}
   - {fileID: 1548472594}
 --- !u!4 &1548472590
@@ -11746,8 +11752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 78.75195
-    y: 250.5321
+    x: 86.56445
+    y: 253.6571
     width: 142.1875
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11758,11 +11764,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1548472592}
-  - {fileID: 1548472755}
-  - {fileID: 1548472757}
   - {fileID: 1548472591}
-  - {fileID: 1548472756}
-  - {fileID: 1548472754}
   - {fileID: 1548472597}
 --- !u!114 &1548472594
 MonoBehaviour:
@@ -11879,7 +11881,7 @@ MonoBehaviour:
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
-  waitForClick: 0
+  waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
@@ -13267,8 +13269,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Anjali idle right : \nRahul idle middle : MS ANJALI!\nRahul left :
-      \nAnjali: OH MY GOD!\nRahul: "
+    stringVal: "Anjali idle right : \nRahul idle middle : MISS ANJALI!\nRahul left
+      : \nAnjali: OH MY GOD!\nRahul: "
 --- !u!114 &1548472661
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15449,74 +15451,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1548472754
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1548472577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 187
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 536725525}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &1548472755
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1548472577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 186
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 1122949055}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &1548472756
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1548472577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 188
-  indentLevel: 0
-  sayDialog: {fileID: 1037373567}
---- !u!114 &1548472757
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1548472577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 189
-  indentLevel: 0
-  sayDialog: {fileID: 1693737331}
 --- !u!114 &1548472758
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17112,7 +17046,7 @@ MonoBehaviour:
   indentLevel: 0
   duration: 1
   fadeOut: 0
-  targetView: {fileID: 1122949055}
+  targetView: {fileID: 536725525}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
@@ -17494,7 +17428,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Guess I'll just leave for that coffee shop. This is too much for today.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 995015529}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -17739,7 +17673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1548472875}
+  parentBlock: {fileID: 1548472589}
   waitForFrames: 1
 --- !u!114 &1548472864
 MonoBehaviour:
@@ -17887,6 +17821,26 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1548472871
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 388
+  indentLevel: 0
+  duration: 1
+  fadeOut: 0
+  targetView: {fileID: 1122949055}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
 --- !u!114 &1548472872
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17985,7 +17939,7 @@ MonoBehaviour:
   itemId: 368
   blockName: MiniGame Start
   description: 
-  eventHandler: {fileID: 1548472863}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1548472862}
   - {fileID: 1548472878}
@@ -18170,6 +18124,21 @@ MonoBehaviour:
   scope: 1
   key: nextBlock
   value: Day 3 - Choice 8
+--- !u!114 &1548472883
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c657364a3b24e16bdf5946729a8b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 389
+  indentLevel: 0
+  key: K_Morale
+  variable: {fileID: 1548472865}
 --- !u!1 &1553460925
 GameObject:
   m_ObjectHideFlags: 0
