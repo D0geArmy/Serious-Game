@@ -61,7 +61,6 @@ public class BoxControl : MonoBehaviour
         }
     }
 
-
     // Update is called once per frame
     void Update()
     {

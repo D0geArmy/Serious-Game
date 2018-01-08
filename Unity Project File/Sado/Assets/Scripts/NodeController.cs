@@ -24,7 +24,8 @@ public class NodeController : MonoBehaviour {
     public bool isEnd = false;
     [SerializeField] [Tooltip("Time to get to this node")]
     //int timeConsumed; change to counter
-    int crowdDensity;
+    public int myHighlight;
+    public GameObject highlight;
 
     Counter sTimer;
     NodeManager myManager;
@@ -48,7 +49,17 @@ public class NodeController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
+        if (isSecoObjective || isPrimObjective)
+        {
+            if (myHighlight == flowchart.GetIntegerVariable("Highlight") && !isObjectiveOver)
+            {
+                highlight.SetActive(true);
+            }
+            else
+            {
+                highlight.SetActive(false);
+            }
+        }
     }
 
     //on click move to clicked object

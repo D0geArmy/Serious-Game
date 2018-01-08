@@ -106,4 +106,14 @@ public class NodeManager : MonoBehaviour {
         yield return new WaitForSecondsRealtime(time);
         flowchart.ExecuteBlock("MiniGame TimeOver");
     }
+
+    void HighlightOn()
+    {
+        gameObject.SetActive(true);
+    }
+
+    void HighlightOff()
+    {
+        gameObject.SetActive(false);
+    }
 }
