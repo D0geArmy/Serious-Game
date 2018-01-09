@@ -7,7 +7,7 @@ using Fungus;
 public class ObjHandler : MonoBehaviour {
 
     public NodeManager nodeManager;
-    public Text[] obj;
+    public Image obj;
 
     Flowchart flowchart;
     int noOfObj;
@@ -26,24 +26,25 @@ public class ObjHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Camera.main.orthographicSize != 20.5)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+    }
 
     public void ShowObjList(Button hideButt)
     {
-        foreach(Text t in obj)
-        {
-            t.gameObject.SetActive(true);
-        }
+        obj.gameObject.SetActive(true);
         hideButt.gameObject.SetActive(true);
     }
 
     public void HideObjList(Button showButt)
     {
-        foreach (Text t in obj)
-        {
-            t.gameObject.SetActive(false);
-        }
+        obj.gameObject.SetActive(false);
         showButt.gameObject.SetActive(true);
     }
 

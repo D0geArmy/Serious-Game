@@ -9,18 +9,18 @@ public class UIMenu : MonoBehaviour {
     [SerializeField]
     NodeManager nodeManager;
     [SerializeField]
-    GameObject mapView;
     Flowchart flowchart;
 
 	// Use this for initialization
 	void Start () {
-        flowchart = nodeManager.flowchart;
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void ApplicationPause(bool pause)
     {

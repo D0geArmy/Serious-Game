@@ -24,11 +24,11 @@ public class NodeManager : MonoBehaviour {
 
     //stalker
     public EnemyController stalker;
-    public EnemyController groper;
 
     //minigame
     public int checkforred = 0;
     string continueBlock;
+    bool haveWon;
 
     // Use this for initialization
     void Start() {
@@ -68,9 +68,10 @@ public class NodeManager : MonoBehaviour {
             flowchart.SetBooleanVariable("isLate", false);
         }
 
-        //minigame state
+        //minigame win state
         if(checkforred == 4)
         {
+            haveWon = true;
             flowchart.ExecuteBlock(continueBlock);
         }
     }
@@ -104,7 +105,10 @@ public class NodeManager : MonoBehaviour {
     IEnumerator minTimer(float time)
     {
         yield return new WaitForSecondsRealtime(time);
-        flowchart.ExecuteBlock("MiniGame TimeOver");
+        if (!haveWon)
+        {
+            flowchart.ExecuteBlock("MiniGame TimeOver");
+        }
     }
 
     void HighlightOn()

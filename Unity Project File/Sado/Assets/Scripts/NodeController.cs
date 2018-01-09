@@ -26,6 +26,7 @@ public class NodeController : MonoBehaviour {
     //int timeConsumed; change to counter
     public int myHighlight;
     public GameObject highlight;
+    public bool highlightable;
 
     Counter sTimer;
     NodeManager myManager;
@@ -51,13 +52,16 @@ public class NodeController : MonoBehaviour {
     void Update () {
         if (isSecoObjective || isPrimObjective)
         {
-            if (myHighlight == flowchart.GetIntegerVariable("Highlight") && !isObjectiveOver)
+            if (highlightable)
             {
-                highlight.SetActive(true);
-            }
-            else
-            {
-                highlight.SetActive(false);
+                if (myHighlight == flowchart.GetIntegerVariable("Highlight"))
+                {
+                    highlight.SetActive(true);
+                }
+                else
+                {
+                    highlight.SetActive(false);
+                }
             }
         }
     }
