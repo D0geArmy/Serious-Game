@@ -89,6 +89,7 @@ public class NodeManager : MonoBehaviour {
 
     public void GameOver()
     {
+
         flowchart.ExecuteBlock("Lost");
     }
 
