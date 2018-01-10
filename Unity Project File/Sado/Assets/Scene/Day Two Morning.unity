@@ -7301,7 +7301,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 765530865}
   selectedCommands:
-  - {fileID: 765530869}
+  - {fileID: 765530871}
   variables:
   - {fileID: 765530790}
   - {fileID: 765530797}
@@ -21412,16 +21412,6 @@ Prefab:
     - target: {fileID: 4139728472451700, guid: 4f749b260657b5149b1b1d1e7eb81deb, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
-        type: 2}
-      propertyPath: moraleIcon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
-        type: 2}
-      propertyPath: moraleText
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
         type: 2}

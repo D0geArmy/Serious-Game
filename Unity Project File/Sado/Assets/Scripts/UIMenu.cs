@@ -23,7 +23,7 @@ public class UIMenu : MonoBehaviour {
     {
         if (Obj != null)
         {
-            if (Camera.main.orthographicSize == 20.5)
+            if (Camera.main.orthographicSize == 20.5 || Camera.main.orthographicSize== 7)
             {
                 Obj.SetActive(true);
             }
