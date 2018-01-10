@@ -10295,6 +10295,7 @@ GameObject:
   - component: {fileID: 1222213941}
   - component: {fileID: 1222213942}
   - component: {fileID: 1222213943}
+  - component: {fileID: 1222213944}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -10315,7 +10316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 470.79132, y: -313.05145}
+  scrollPos: {x: 492.66632, y: 49.448437}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -10327,9 +10328,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1222213909}
+  - {fileID: 1222213882}
   selectedCommands:
-  - {fileID: 1222213943}
+  - {fileID: 1222213944}
   variables:
   - {fileID: 1222213885}
   - {fileID: 1222213884}
@@ -10386,6 +10387,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1222213881}
   commandList:
+  - {fileID: 1222213944}
   - {fileID: 1222213915}
   - {fileID: 1222213940}
   - {fileID: 1222213919}
@@ -11785,6 +11787,23 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1222213944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222213879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 389
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: d978e6f9c4deea942a360a64c90c1c64, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &1244359026
 GameObject:
   m_ObjectHideFlags: 0
