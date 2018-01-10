@@ -51,7 +51,8 @@ public class NodeManager : MonoBehaviour {
         {
             if (player.position == endGoal.gameObject.transform.position)
             {
-                GameOver();
+               // print("lost");
+                //GameOver();
             }
         }
 
@@ -89,7 +90,7 @@ public class NodeManager : MonoBehaviour {
 
     public void GameOver()
     {
-
+        flowchart.StopAllBlocks();
         flowchart.ExecuteBlock("Lost");
     }
 
