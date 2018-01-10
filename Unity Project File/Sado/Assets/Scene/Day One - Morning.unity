@@ -12784,7 +12784,6 @@ GameObject:
   - component: {fileID: 1774212907}
   - component: {fileID: 1774212908}
   - component: {fileID: 1774212909}
-  - component: {fileID: 1774212910}
   - component: {fileID: 1774212888}
   - component: {fileID: 1774212911}
   - component: {fileID: 1774212914}
@@ -12866,7 +12865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 838.17914, y: -0.3922602}
+  scrollPos: {x: 670.9379, y: -602.11615}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -12878,8 +12877,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1774212819}
-  selectedCommands: []
+  - {fileID: 1774212884}
+  selectedCommands:
+  - {fileID: 1774212923}
   variables:
   - {fileID: 1774212826}
   - {fileID: 1774212827}
@@ -15135,30 +15135,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &1774212910
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774212807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 378.71692
-    y: 922.7196
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 392
-  blockName: New Block
-  description: 
-  eventHandler: {fileID: 0}
-  commandList: []
 --- !u!114 &1774212911
 MonoBehaviour:
   m_ObjectHideFlags: 2
