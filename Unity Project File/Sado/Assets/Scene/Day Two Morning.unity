@@ -7161,7 +7161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -593.5668, y: -300.99496}
+  scrollPos: {x: 814.1244, y: 99.00486}
   variablesScrollPos: {x: 0, y: 58}
   variablesExpanded: 1
   blockViewHeight: 412
@@ -7173,9 +7173,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 765530936}
-  selectedCommands:
-  - {fileID: 765530952}
+  - {fileID: 765530723}
+  selectedCommands: []
   variables:
   - {fileID: 765530790}
   - {fileID: 765530797}
@@ -7264,7 +7263,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &765530726
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765530721}
@@ -13865,7 +13864,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &765531013
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765530721}
