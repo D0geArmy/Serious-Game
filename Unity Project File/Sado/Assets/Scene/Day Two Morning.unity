@@ -7160,7 +7160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -439.72086, y: -322.14874}
+  scrollPos: {x: -247.41327, y: -47.14899}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 412
@@ -7172,7 +7172,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 765530936}
+  - {fileID: 765530858}
   selectedCommands: []
   variables:
   - {fileID: 765530726}
@@ -9378,7 +9378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1466.2415
+    x: 1460.4722
     y: 171.20567
     width: 169.23071
     height: 40
@@ -10258,8 +10258,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1707.9823
-    y: 168.61778
+    x: 1698.3668
+    y: 174.38702
     width: 169.23071
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -20678,6 +20678,11 @@ Prefab:
       propertyPath: manager
       value: 
       objectReference: {fileID: 92132289}
+    - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
+        type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 777450561}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f749b260657b5149b1b1d1e7eb81deb, type: 2}
   m_IsPrefabParent: 0
@@ -23393,47 +23398,47 @@ Prefab:
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114757176111815868, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114716435625202702, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114864323225194676, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114188710576631196, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114140276613031738, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114818033724670454, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114601483709673946, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114934736793754672, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: mgm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 92132289}
     - target: {fileID: 114818033724670454, guid: 48e92a1f2707ae74089b376e80bb396e,
         type: 2}
       propertyPath: id

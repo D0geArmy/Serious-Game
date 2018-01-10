@@ -916,16 +916,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 80517911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 848, y: -148, z: 0}
+  m_LocalPosition: {x: 848, y: -88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1127246697}
   m_Father: {fileID: 1079169407}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 848, y: -148}
+  m_AnchoredPosition: {x: 848, y: -88}
   m_SizeDelta: {x: 86, y: 86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80517913
@@ -4062,16 +4062,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 366439539}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 848, y: -148, z: 0}
+  m_LocalPosition: {x: 848, y: -88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1810644866}
   m_Father: {fileID: 1079169407}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 848, y: -148}
+  m_AnchoredPosition: {x: 848, y: -88}
   m_SizeDelta: {x: 86, y: 86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366439541
@@ -6789,7 +6789,7 @@ RectTransform:
   - {fileID: 729403806}
   - {fileID: 1808819762}
   m_Father: {fileID: 1079169407}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10598,9 +10598,9 @@ RectTransform:
   m_Children:
   - {fileID: 1659241973}
   - {fileID: 1905067917}
+  - {fileID: 660965733}
   - {fileID: 366439540}
   - {fileID: 80517912}
-  - {fileID: 660965733}
   - {fileID: 1611115775}
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -14701,6 +14701,13 @@ GameObject:
   - component: {fileID: 1548472773}
   - component: {fileID: 1548472774}
   - component: {fileID: 1548472775}
+  - component: {fileID: 1548472825}
+  - component: {fileID: 1548472784}
+  - component: {fileID: 1548472780}
+  - component: {fileID: 1548472776}
+  - component: {fileID: 1548472827}
+  - component: {fileID: 1548472898}
+  - component: {fileID: 1548472899}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -14721,11 +14728,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 834.75134, y: -1232.0477}
+  scrollPos: {x: 94.843414, y: -230.20593}
   variablesScrollPos: {x: 0, y: 58}
   variablesExpanded: 1
   blockViewHeight: 402
-  zoom: 0.6699999
+  zoom: 0.55
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -14733,9 +14740,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1548472697}
-  selectedCommands:
-  - {fileID: 1548472775}
+  - {fileID: 1548472702}
+  selectedCommands: []
   variables:
   - {fileID: 1548472759}
   - {fileID: 1548472781}
@@ -14789,7 +14795,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 84.57538
     y: 164.2106
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14841,7 +14847,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -29.201206
     y: 415.55682
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14868,7 +14874,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 89.02119
     y: 328.84537
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14942,7 +14948,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.7747
     y: 416.39044
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15011,7 +15017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 73.10921
     y: 71.26582
-    width: 158.95523
+    width: 173.63635
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15113,7 +15119,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 86.56445
     y: 253.6571
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15186,7 +15192,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 82.38893
     y: 503.02505
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15259,7 +15265,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 176.09258
     y: 1246.3107
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15518,7 +15524,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 19.842499
     y: 1341.6232
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15638,7 +15644,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -141.09499
     y: 1247.8733
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15664,7 +15670,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 27.249866
     y: 1171.942
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15759,7 +15765,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 218.01366
     y: 1077.7756
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15862,7 +15868,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -86.44997
     y: 1060.7568
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15888,7 +15894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 252.36584
     y: 992.05194
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15991,7 +15997,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 243.37874
     y: 907.44434
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16018,7 +16024,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -81.542404
     y: 899.979
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16116,7 +16122,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.44438
     y: 835.2015
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16239,7 +16245,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248.2
     y: 778.0928
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16265,7 +16271,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -75.61671
     y: 778.28516
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16313,7 +16319,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.10093
     y: 714.8945
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16427,7 +16433,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 193.02402
     y: 637.6815
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16453,7 +16459,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -37.304237
     y: 640.3396
-    width: 138.05972
+    width: 155.45454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16479,7 +16485,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1325.3331
     y: 219.90176
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16564,7 +16570,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1098.7542
     y: 221.2716
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16674,7 +16680,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1212.9131
     y: 102.76599
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16728,7 +16734,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 527.3553
     y: -16.296219
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16738,6 +16744,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1548472663}
+  - {fileID: 1548472825}
 --- !u!114 &1548472665
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16805,7 +16812,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 528.4116
     y: 44.28769
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16816,6 +16823,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1548472666}
   - {fileID: 1548472665}
+  - {fileID: 1548472784}
 --- !u!114 &1548472668
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16883,7 +16891,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 527.2051
     y: 102.5175
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16894,6 +16902,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1548472669}
   - {fileID: 1548472668}
+  - {fileID: 1548472780}
 --- !u!114 &1548472671
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17145,7 +17154,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.4223
     y: 103.0469
-    width: 121.6418
+    width: 131.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17210,7 +17219,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 525.0058
     y: 161.92265
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17221,6 +17230,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1548472680}
   - {fileID: 1548472794}
+  - {fileID: 1548472776}
 --- !u!114 &1548472685
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17278,7 +17288,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 689.6776
     y: 275.50522
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17306,7 +17316,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 526.9681
     y: 332.49945
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17332,7 +17342,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 533.1936
     y: 275.18503
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17342,6 +17352,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1548472675}
+  - {fileID: 1548472827}
   - {fileID: 1548472790}
   - {fileID: 1548472690}
 --- !u!114 &1548472690
@@ -17401,7 +17412,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 526.2805
     y: 215.41277
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17514,7 +17525,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 22.856113
     y: 1449.5656
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17578,7 +17589,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1330.1293
     y: 334.57846
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17604,7 +17615,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1095.9547
     y: 341.9202
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17630,7 +17641,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1212.9547
     y: 403.2224
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17644,6 +17655,7 @@ MonoBehaviour:
   - {fileID: 1548472733}
   - {fileID: 1548472730}
   - {fileID: 1548472731}
+  - {fileID: 1548472899}
   - {fileID: 1548472841}
 --- !u!114 &1548472703
 MonoBehaviour:
@@ -17676,7 +17688,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1212.8977
     y: 268.0678
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17743,7 +17755,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1222.2568
     y: 751.9614
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17791,7 +17803,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1130.419
     y: 813.8104
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17862,7 +17874,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1017.5034
     y: 751.4137
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17982,7 +17994,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1129.0049
     y: 683.58075
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18104,7 +18116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1104.755
     y: 606.0455
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18130,7 +18142,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1401.1238
     y: 536.5038
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18158,7 +18170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1196.5905
     y: 535.3275
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18184,7 +18196,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 990.29755
     y: 508.48425
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18237,7 +18249,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1210.2803
     y: 462.7245
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18804,7 +18816,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1406.4005
     y: 858.49915
-    width: 144.02986
+    width: 162.72726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18999,7 +19011,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.26222
     y: 572.5851
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19169,7 +19181,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -78.793236
     y: 972.38684
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19302,6 +19314,70 @@ MonoBehaviour:
   indentLevel: 0
   key: K_Dress
   variable: {fileID: 1548472579}
+--- !u!114 &1548472776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 425
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1548472777
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19372,6 +19448,70 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1548472780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 424
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1548472781
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19433,6 +19573,70 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &1548472784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 423
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1548472785
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19681,6 +19885,7 @@ MonoBehaviour:
   - {fileID: 1548472799}
   - {fileID: 1548472800}
   - {fileID: 1548472798}
+  - {fileID: 1548472898}
   - {fileID: 1548472803}
   - {fileID: 1548472805}
 --- !u!114 &1548472796
@@ -20309,6 +20514,70 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1548472825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 422
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1548472826
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -20323,6 +20592,70 @@ MonoBehaviour:
   itemId: 288
   indentLevel: 0
   sayDialog: {fileID: 1037373567}
+--- !u!114 &1548472827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 426
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1548472828
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -20384,7 +20717,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1219.2563
     y: 169.81104
-    width: 132.08957
+    width: 146.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21331,7 +21664,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1439.4156
     y: 402.31787
-    width: 130.59703
+    width: 139.09091
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21451,7 +21784,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1419.1748
     y: 464.4579
-    width: 154.47763
+    width: 170
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21786,6 +22119,134 @@ MonoBehaviour:
   itemId: 413
   indentLevel: 0
   sayDialog: {fileID: 1037373567}
+--- !u!114 &1548472898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 427
+  indentLevel: 1
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1548472899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 428
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1544675637}
+        m_MethodName: ToggleIsObjectiveOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Day 3 - Choice 8
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1562773781
 GameObject:
   m_ObjectHideFlags: 0
