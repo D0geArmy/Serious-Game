@@ -95,7 +95,6 @@ public class NodeController : MonoBehaviour {
     {
         if (!isObjectiveOver)
         {
-            isObjectiveOver = true;
             sTimer.DecreaseTime(0);
             if (isPrimObjective)
             {
@@ -108,15 +107,18 @@ public class NodeController : MonoBehaviour {
                         //trigger end here
                         //myManager.ReachedEnd();
                         flowchart.ExecuteBlock("Work");
+                        flowchart.SetIntegerVariable("TriggerID", NodeNo);
                     }
                     else
                     {
                         flowchart.ExecuteBlock("Home");
+                        flowchart.SetIntegerVariable("TriggerID", NodeNo);
                     }
                 }
                 else
                 {
-                        flowchart.ExecuteBlock("School");
+                    flowchart.ExecuteBlock("School");
+                    flowchart.SetIntegerVariable("TriggerID", NodeNo);
                 }
             }
             else
@@ -148,6 +150,7 @@ public class NodeController : MonoBehaviour {
             }
         }
     }
+
 
    /* public void MoraleUpdate()
     {

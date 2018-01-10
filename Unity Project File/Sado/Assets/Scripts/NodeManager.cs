@@ -119,4 +119,15 @@ public class NodeManager : MonoBehaviour {
     {
         gameObject.SetActive(false);
     }
+
+    public void ToggleIsObjectiveOver()
+    {
+        foreach(NodeController nc in iNode)
+        {
+            if (nc.NodeNo == flowchart.GetIntegerVariable("TriggerID"))
+            {
+                nc.isObjectiveOver = true;
+            }
+        }
+    }
 }
