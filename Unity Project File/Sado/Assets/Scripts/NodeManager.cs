@@ -54,7 +54,7 @@ public class NodeManager : MonoBehaviour {
         {
             if (player.position == endGoal.gameObject.transform.position)
             {
-                ReachedEnd();
+                GameOver();
             }
         }
 
@@ -90,9 +90,9 @@ public class NodeManager : MonoBehaviour {
         return iNode[tNodeNo];
     }
 
-    public void ReachedEnd()
+    public void GameOver()
     {
-
+        flowchart.ExecuteBlock("Lost");
     }
 
     //mini game timer and sequencing

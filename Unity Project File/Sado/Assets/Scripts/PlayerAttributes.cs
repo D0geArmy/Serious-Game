@@ -69,6 +69,12 @@ public class PlayerAttributes : MonoBehaviour {
         }
 
         slider.value = morale;
+
+        if(morale<= 0)
+        {
+            morale = 0;
+            manager.GameOver();
+        }
       /*  //GUI
         moraleText.text = morale.ToString();
 
