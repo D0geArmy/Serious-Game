@@ -12139,11 +12139,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4139728472451700, guid: 4f749b260657b5149b1b1d1e7eb81deb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -12.6
       objectReference: {fileID: 0}
     - target: {fileID: 4139728472451700, guid: 4f749b260657b5149b1b1d1e7eb81deb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25
+      value: 31.2
       objectReference: {fileID: 0}
     - target: {fileID: 4139728472451700, guid: 4f749b260657b5149b1b1d1e7eb81deb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -12174,16 +12174,6 @@ Prefab:
       propertyPath: manager
       value: 
       objectReference: {fileID: 207343782}
-    - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
-        type: 2}
-      propertyPath: moraleIcon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
-        type: 2}
-      propertyPath: moraleText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
         type: 2}
       propertyPath: slider
@@ -14297,6 +14287,16 @@ GameObject:
   - component: {fileID: 1700219845}
   - component: {fileID: 1700219852}
   - component: {fileID: 1700219853}
+  - component: {fileID: 1700219870}
+  - component: {fileID: 1700219869}
+  - component: {fileID: 1700219868}
+  - component: {fileID: 1700219866}
+  - component: {fileID: 1700219863}
+  - component: {fileID: 1700219862}
+  - component: {fileID: 1700219861}
+  - component: {fileID: 1700219860}
+  - component: {fileID: 1700219855}
+  - component: {fileID: 1700219854}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -15276,7 +15276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1120.1835, y: -844.2222}
+  scrollPos: {x: -601.2179, y: 16.122797}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 399
@@ -15288,9 +15288,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1700219834}
-  selectedCommands:
-  - {fileID: 1700219853}
+  - {fileID: 1700219862}
+  - {fileID: 1700219870}
+  selectedCommands: []
   variables:
   - {fileID: 1700219719}
   - {fileID: 1700219713}
@@ -17585,7 +17585,7 @@ MonoBehaviour:
   - {fileID: 1700219845}
 --- !u!114 &1700219852
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700219711}
@@ -17600,7 +17600,7 @@ MonoBehaviour:
   variable: {fileID: 1700219809}
 --- !u!114 &1700219853
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700219711}
@@ -17613,6 +17613,200 @@ MonoBehaviour:
   indentLevel: 0
   key: K_Morale
   variable: {fileID: 1700219809}
+--- !u!114 &1700219854
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1700219862}
+  targetButton: {fileID: 0}
+--- !u!114 &1700219855
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 501
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 117537810}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1700219860
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 496
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1935883928}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1700219861
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c952ea1ad444e479b570fa242679c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 495
+  indentLevel: 0
+  duration: 1
+  targetView: {fileID: 2137478194}
+  waitUntilFinished: 0
+  targetCamera: {fileID: 0}
+--- !u!114 &1700219862
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1408.7689
+    y: 114.516426
+    width: 144.8276
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 337
+  blockName: Zoom Out (Copy)
+  description: 
+  eventHandler: {fileID: 1700219854}
+  commandList:
+  - {fileID: 1700219861}
+  - {fileID: 1700219860}
+  - {fileID: 1700219855}
+--- !u!114 &1700219863
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1700219870}
+  targetButton: {fileID: 0}
+--- !u!114 &1700219866
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 491
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1935883928}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1700219868
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 489
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 117537810}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1700219869
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c952ea1ad444e479b570fa242679c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 488
+  indentLevel: 0
+  duration: 1
+  targetView: {fileID: 2087991543}
+  waitUntilFinished: 0
+  targetCamera: {fileID: 0}
+--- !u!114 &1700219870
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1410.1835
+    y: 33.238026
+    width: 137.93105
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 332
+  blockName: Zoom In (Copy)
+  description: 
+  eventHandler: {fileID: 1700219863}
+  commandList:
+  - {fileID: 1700219869}
+  - {fileID: 1700219868}
+  - {fileID: 1700219866}
 --- !u!1 &1702314290
 GameObject:
   m_ObjectHideFlags: 0
@@ -20729,6 +20923,12 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
+--- !u!114 &2087991543 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114253929760040822, guid: 4f749b260657b5149b1b1d1e7eb81deb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1461681867}
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
 --- !u!115 &2089191352
 MonoScript:
   m_ObjectHideFlags: 0
