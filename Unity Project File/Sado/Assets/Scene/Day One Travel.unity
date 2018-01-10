@@ -1344,6 +1344,7 @@ GameObject:
   - component: {fileID: 73722349}
   - component: {fileID: 73722351}
   - component: {fileID: 73722352}
+  - component: {fileID: 73722353}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1408,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1419.387, y: -793.45856}
+  scrollPos: {x: 1448.8958, y: -934.4421}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1420,9 +1421,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 73722294}
-  selectedCommands:
-  - {fileID: 73722348}
+  - {fileID: 73722333}
+  selectedCommands: []
   variables:
   - {fileID: 73722185}
   - {fileID: 73722193}
@@ -4872,6 +4872,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 73722332}
+  - {fileID: 73722353}
   - {fileID: 73722334}
 --- !u!114 &73722334
 MonoBehaviour:
@@ -5253,6 +5254,24 @@ MonoBehaviour:
   indentLevel: 0
   key: K_Morale
   variable: {fileID: 73722236}
+--- !u!114 &73722353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73722178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 403
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Anjali hide:
+
+      Customer hide:'
 --- !u!1001 &90361549
 Prefab:
   m_ObjectHideFlags: 0
