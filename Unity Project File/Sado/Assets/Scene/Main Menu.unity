@@ -341,6 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292921208}
   - component: {fileID: 292921207}
+  - component: {fileID: 292921209}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -373,6 +374,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292921209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 292921206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ea3a6aa06ea39439ad678e19a3d62c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298667806
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +467,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298667806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 130060107}
@@ -902,7 +914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 225, y: 29}
+  scrollPos: {x: 195, y: 55}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -915,8 +927,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 428621426}
-  selectedCommands:
-  - {fileID: 428621435}
+  selectedCommands: []
   variables:
   - {fileID: 428621416}
   description: 
@@ -974,7 +985,7 @@ MonoBehaviour:
   - {fileID: 428621434}
 --- !u!114 &428621418
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -987,7 +998,7 @@ MonoBehaviour:
   targetButton: {fileID: 1489257584}
 --- !u!114 &428621419
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1020,7 +1031,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &428621421
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1048,7 +1059,7 @@ MonoBehaviour:
   - {fileID: 428621431}
 --- !u!114 &428621422
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1061,7 +1072,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &428621423
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1081,7 +1092,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &428621424
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1101,7 +1112,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &428621425
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1121,7 +1132,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &428621426
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1149,7 +1160,7 @@ MonoBehaviour:
   - {fileID: 428621425}
 --- !u!114 &428621427
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1178,7 +1189,7 @@ MonoBehaviour:
     floatVal: 0
 --- !u!114 &428621428
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1207,7 +1218,7 @@ MonoBehaviour:
     floatVal: 0
 --- !u!114 &428621429
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1220,7 +1231,7 @@ MonoBehaviour:
   targetButton: {fileID: 1324734895}
 --- !u!114 &428621430
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1240,7 +1251,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &428621431
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1260,7 +1271,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &428621432
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1289,7 +1300,7 @@ MonoBehaviour:
     floatVal: 1
 --- !u!114 &428621433
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1318,7 +1329,7 @@ MonoBehaviour:
     floatVal: 1
 --- !u!114 &428621434
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1347,7 +1358,7 @@ MonoBehaviour:
     floatVal: 1
 --- !u!114 &428621435
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428621414}
@@ -1530,8 +1541,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445305335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.40625, y: 0.40625, z: 0.40625}
   m_Children:
   - {fileID: 43872446}
   - {fileID: 1082717457}

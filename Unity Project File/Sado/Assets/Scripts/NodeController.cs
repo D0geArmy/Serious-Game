@@ -148,4 +148,10 @@ public class NodeController : MonoBehaviour {
             }
         }
     }
+
+    public void MoraleUpdate()
+    {
+        PlayerAttributes att = Player.gameObject.GetComponent<PlayerAttributes>();
+        att.morale = flowchart.GetIntegerVariable("Morale");
+    }
 }

@@ -9,6 +9,7 @@ public class PlayerAttributes : MonoBehaviour {
     public NodeManager manager;
 
     //attributes
+    //public static int Morale;
     public int morale;
     int totalMorale;
 
@@ -51,10 +52,16 @@ public class PlayerAttributes : MonoBehaviour {
 		
 	}
 
+    private void OnEnable()
+    {
+        //morale = Morale;
+        //morale = manager.flowchart.GetIntegerVariable("Morale");
+        //manager.flowchart.SetIntegerVariable("Morale", Morale);
+    }
+
     // Update is called once per frame
     void Update()
     {
-
         //movement
         if (move)
         {
@@ -70,35 +77,45 @@ public class PlayerAttributes : MonoBehaviour {
 
         slider.value = morale;
 
-        if(morale<= 0)
+        morale = manager.flowchart.GetIntegerVariable("Morale");
+
+        //min and max
+        if (morale <= 0)
         {
-            morale = 0;
+            manager.flowchart.SetIntegerVariable("Morale", 0);
             manager.GameOver();
         }
-      /*  //GUI
-        moraleText.text = morale.ToString();
+        else if (morale >= 24)
+        {
+            morale = 24;
+            manager.flowchart.SetIntegerVariable("Morale", 24);
+        }
+        /*//GUI
+          moraleText.text = morale.ToString();
 
-        if (morale >= stage5)
-        {
-            moraleIcon.sprite = SStage5;
-        }
-        else if (morale >= stage4)
-        {
-            moraleIcon.sprite = SStage4;
-        }
-        else if (morale >= stage3)
-        {
-            moraleIcon.sprite = SStage3;
-        }
-        else if (morale >= stage2)
-        {
-            moraleIcon.sprite = SStage2;
-        }
-        else if (morale >= stage1)
-        {
-            moraleIcon.sprite = SStage1;
-        }*/
+          if (morale >= stage5)
+          {
+              moraleIcon.sprite = SStage5;
+          }
+          else if (morale >= stage4)
+          {
+              moraleIcon.sprite = SStage4;
+          }
+          else if (morale >= stage3)
+          {
+              moraleIcon.sprite = SStage3;
+          }
+          else if (morale >= stage2)
+          {
+              moraleIcon.sprite = SStage2;
+          }
+          else if (morale >= stage1)
+          {
+              moraleIcon.sprite = SStage1;
+          }*/
     }
+
+
 
     //movement
     public void movePlayer(bool mo, Vector3 des)
@@ -118,11 +135,15 @@ public class PlayerAttributes : MonoBehaviour {
     //morale increase and decrease from scripts
     public void DecreaseMorale(int amount)
     {
-        morale -= amount;
+        //morale -= amount;
+        manager.flowchart.SetIntegerVariable("Morale", morale += amount);
+        //Morale = morale;
     }
 
     public void IncreaseMorale(int amount)
     {
-        morale += amount;
+       // morale += amount;
+        manager.flowchart.SetIntegerVariable("Morale", morale += amount);
+       // Morale = morale;
     }
 }

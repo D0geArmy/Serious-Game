@@ -10,7 +10,6 @@ public class ObjHandler : MonoBehaviour {
     public Image obj;
 
     Flowchart flowchart;
-    int noOfObj;
 
     // Use this for initialization
     void Start () {
@@ -46,13 +45,5 @@ public class ObjHandler : MonoBehaviour {
     {
         obj.gameObject.SetActive(false);
         showButt.gameObject.SetActive(true);
-    }
-
-    void CreateList()
-    {
-        for(int i = 0; i < noOfObj; i++)
-        {
-            //Text[i] = 
-        }
     }
 }

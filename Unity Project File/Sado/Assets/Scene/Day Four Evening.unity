@@ -3629,8 +3629,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380268422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.36583334, y: 0.36583334, z: 0.36583334}
   m_Children:
   - {fileID: 2067847717}
   m_Father: {fileID: 0}
@@ -3777,7 +3777,6 @@ MonoBehaviour:
   - {fileID: 2040412191}
   attributes: {fileID: 1883747198}
   player: {fileID: 1883747201}
-  mor: 0
   stalker: {fileID: 126470589}
   checkforred: 0
 --- !u!1 &414423074
@@ -4071,8 +4070,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 422256201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.36583334, y: 0.36583334, z: 0.36583334}
   m_Children:
   - {fileID: 1907474418}
   - {fileID: 802172767}
@@ -4889,8 +4888,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469481569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.40625, y: 0.40625, z: 0.40625}
   m_Children:
   - {fileID: 152188967}
   - {fileID: 945420909}
@@ -5820,8 +5819,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515632303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.40648147, y: 0.40648147, z: 0.40648147}
   m_Children:
   - {fileID: 1237142805}
   m_Father: {fileID: 0}
@@ -10444,7 +10443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   scrollPos: {x: 539.721, y: 250.61945}
-  variablesScrollPos: {x: 0, y: 138}
+  variablesScrollPos: {x: 0, y: 18}
   variablesExpanded: 1
   blockViewHeight: 371
   zoom: 0.55000037
@@ -12038,7 +12037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: Morale
-  value: 0
+  value: 24
 --- !u!114 &1075610941
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16378,8 +16377,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1361331120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
+  m_LocalScale: {x: 0.36583334, y: 0.36583334, z: 0.36583334}
   m_Children:
   - {fileID: 1468853951}
   - {fileID: 1041050524}
@@ -19585,7 +19584,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1814996508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalPosition: {x: 390, y: 219.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1649865347}

@@ -20,7 +20,6 @@ public class NodeManager : MonoBehaviour {
     //player related
     public PlayerAttributes attributes;
     public Transform player;
-    public int mor;
 
     //stalker
     public EnemyController stalker;
@@ -47,8 +46,6 @@ public class NodeManager : MonoBehaviour {
         //init bool disabled every frame
         disabled = flowchart.GetBooleanVariable("NodeDisabled");
         //init morale values in script and flowchart
-        mor = attributes.morale;
-        flowchart.SetIntegerVariable("Morale", mor);
 
         if (endGoal != null)
         {
