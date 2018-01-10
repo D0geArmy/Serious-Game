@@ -6852,7 +6852,6 @@ GameObject:
   - component: {fileID: 765530725}
   - component: {fileID: 765530722}
   - component: {fileID: 765530723}
-  - component: {fileID: 765530726}
   - component: {fileID: 765530727}
   - component: {fileID: 765530728}
   - component: {fileID: 765530729}
@@ -7140,6 +7139,8 @@ GameObject:
   - component: {fileID: 765531010}
   - component: {fileID: 765531011}
   - component: {fileID: 765531012}
+  - component: {fileID: 765530726}
+  - component: {fileID: 765531013}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -7160,8 +7161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -247.41327, y: -47.14899}
-  variablesScrollPos: {x: 0, y: 0}
+  scrollPos: {x: -593.5668, y: -300.99496}
+  variablesScrollPos: {x: 0, y: 58}
   variablesExpanded: 1
   blockViewHeight: 412
   zoom: 0.5200003
@@ -7172,10 +7173,10 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 765530858}
-  selectedCommands: []
+  - {fileID: 765530936}
+  selectedCommands:
+  - {fileID: 765530952}
   variables:
-  - {fileID: 765530726}
   - {fileID: 765530790}
   - {fileID: 765530797}
   - {fileID: 765530798}
@@ -7188,6 +7189,7 @@ MonoBehaviour:
   - {fileID: 765530934}
   - {fileID: 765530932}
   - {fileID: 765530944}
+  - {fileID: 765530726}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -7223,8 +7225,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 765530724}
   commandList:
-  - {fileID: 765530959}
   - {fileID: 765530727}
+  - {fileID: 765530959}
   - {fileID: 765530803}
   - {fileID: 765530958}
   - {fileID: 765530956}
@@ -7262,18 +7264,18 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &765530726
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765530721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705fa1ac97df74e3a84ff952ffd923f1, type: 3}
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
+  scope: 0
   key: Morale
-  value: 24
+  value: 0
 --- !u!114 &765530727
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12068,6 +12070,7 @@ MonoBehaviour:
   - {fileID: 765530946}
   - {fileID: 765530945}
   - {fileID: 765530952}
+  - {fileID: 765531013}
   - {fileID: 765530947}
 --- !u!114 &765530937
 MonoBehaviour:
@@ -12410,8 +12413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 231
   indentLevel: 0
-  key: PrintsFirst
-  variable: {fileID: 765530948}
+  key: K_Morale
+  variable: {fileID: 765530726}
 --- !u!114 &765530953
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13228,9 +13231,6 @@ MonoBehaviour:
   m_Script: {fileID: 1066231937}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 391
-  indentLevel: 0
-  amount: 2
 --- !u!114 &765530988
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13242,9 +13242,6 @@ MonoBehaviour:
   m_Script: {fileID: 1066231937}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 393
-  indentLevel: 0
-  amount: 1
 --- !u!114 &765530989
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13340,9 +13337,6 @@ MonoBehaviour:
   m_Script: {fileID: 1066231937}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 400
-  indentLevel: 0
-  amount: 2
 --- !u!114 &765530996
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13354,9 +13348,6 @@ MonoBehaviour:
   m_Script: {fileID: 1066231937}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 401
-  indentLevel: 0
-  amount: 2
 --- !u!114 &765530997
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13872,6 +13863,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &765531013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765530721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bef7966140464bd5a3ef4da2ff236b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 421
+  indentLevel: 0
+  key: PrintsFirst
+  variable: {fileID: 765530948}
 --- !u!1 &767786464
 GameObject:
   m_ObjectHideFlags: 0
