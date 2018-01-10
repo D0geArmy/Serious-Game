@@ -3135,12 +3135,12 @@ Prefab:
     - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
         type: 2}
       propertyPath: highlightable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
         type: 2}
       propertyPath: myHighlight
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
@@ -4646,6 +4646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeManager: {fileID: 1544675637}
   flowchart: {fileID: 1548472578}
+  Obj: {fileID: 1079169402}
 --- !u!114 &423450017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6743,7 +6744,7 @@ Prefab:
     - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
         type: 2}
       propertyPath: myHighlight
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
@@ -14707,6 +14708,10 @@ GameObject:
   - component: {fileID: 1548472827}
   - component: {fileID: 1548472898}
   - component: {fileID: 1548472899}
+  - component: {fileID: 1548472671}
+  - component: {fileID: 1548472746}
+  - component: {fileID: 1548472747}
+  - component: {fileID: 1548472748}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -14727,8 +14732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 910.0232, y: 259.21573}
-  variablesScrollPos: {x: 0, y: 58}
+  scrollPos: {x: 351.0071, y: 14.953404}
+  variablesScrollPos: {x: 0, y: 78}
   variablesExpanded: 1
   blockViewHeight: 402
   zoom: 0.6099999
@@ -14739,8 +14744,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1548472739}
-  - {fileID: 1548472742}
+  - {fileID: 1548472795}
   selectedCommands: []
   variables:
   - {fileID: 1548472759}
@@ -14756,6 +14760,7 @@ MonoBehaviour:
   - {fileID: 1548472865}
   - {fileID: 1548472882}
   - {fileID: 1548472859}
+  - {fileID: 1548472671}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -16903,6 +16908,20 @@ MonoBehaviour:
   - {fileID: 1548472669}
   - {fileID: 1548472668}
   - {fileID: 1548472780}
+--- !u!114 &1548472671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Highlight
+  value: 0
 --- !u!114 &1548472672
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17213,6 +17232,7 @@ MonoBehaviour:
   - {fileID: 1548472680}
   - {fileID: 1548472794}
   - {fileID: 1548472776}
+  - {fileID: 1548472747}
 --- !u!114 &1548472685
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17309,6 +17329,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1548472685}
   - {fileID: 1548472789}
+  - {fileID: 1548472746}
 --- !u!114 &1548472689
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18622,6 +18643,87 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 1
+--- !u!114 &1548472746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 439
+  indentLevel: 0
+  variable: {fileID: 1548472671}
+  setOperator: 2
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &1548472747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 440
+  indentLevel: 0
+  variable: {fileID: 1548472671}
+  setOperator: 3
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &1548472748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548472577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 441
+  indentLevel: 1
+  variable: {fileID: 1548472671}
+  setOperator: 2
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 1
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &1548472751
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19727,6 +19829,7 @@ MonoBehaviour:
   - {fileID: 1548472800}
   - {fileID: 1548472798}
   - {fileID: 1548472898}
+  - {fileID: 1548472748}
   - {fileID: 1548472803}
   - {fileID: 1548472805}
 --- !u!114 &1548472796

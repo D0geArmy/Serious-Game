@@ -2743,6 +2743,11 @@ Prefab:
       propertyPath: myHighlight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: highlightable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
   m_IsPrefabParent: 0
@@ -8716,6 +8721,11 @@ Prefab:
       propertyPath: myHighlight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: highlightable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
   m_IsPrefabParent: 0
@@ -10345,8 +10355,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1222213946}
-  selectedCommands:
-  - {fileID: 1222213945}
+  selectedCommands: []
   variables:
   - {fileID: 1222213885}
   - {fileID: 1222213884}
@@ -13386,6 +13395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeManager: {fileID: 1367889333}
   flowchart: {fileID: 1222213880}
+  Obj: {fileID: 1491301391}
 --- !u!114 &1379926488
 MonoBehaviour:
   m_ObjectHideFlags: 0

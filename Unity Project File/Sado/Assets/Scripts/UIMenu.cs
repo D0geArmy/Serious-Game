@@ -10,6 +10,8 @@ public class UIMenu : MonoBehaviour {
     NodeManager nodeManager;
     [SerializeField]
     Flowchart flowchart;
+    [SerializeField]
+    GameObject Obj;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +21,17 @@ public class UIMenu : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        if (Obj != null)
+        {
+            if (Camera.main.orthographicSize == 20.5)
+            {
+                Obj.SetActive(true);
+            }
+            else
+            {
+                Obj.SetActive(false);
+            }
+        }
     }
 
     public void ApplicationPause(bool pause)

@@ -9,30 +9,30 @@ public class ObjHandler : MonoBehaviour {
     public NodeManager nodeManager;
     public Image obj;
 
+    GameObject[] list = new GameObject[6];
     Flowchart flowchart;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         flowchart = nodeManager.flowchart;
-	    /*foreach(NodeController nc in nodeManager.iNode)
+
+       // GameObject[] temp = GameObject.FindGameObjectsWithTag("List");
+        
+        /*foreach (GameObject go in temp)
         {
-            if (nc.secObjValue > 0)
-            {
-                noOfObj += 1;
-            }
+            //for (int i = 0; i < temp.Length; i++)
+            //{
+            int i = 0;
+            list[i] = go.gameObject;
+            i++;
+           // }
         }*/
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Camera.main.orthographicSize != 20.5)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
-        }
+
     }
 
     public void ShowObjList(Button hideButt)

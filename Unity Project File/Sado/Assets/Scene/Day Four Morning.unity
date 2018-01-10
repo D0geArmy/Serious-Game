@@ -2655,6 +2655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeManager: {fileID: 930810883}
   flowchart: {fileID: 1192406722}
+  Obj: {fileID: 925851226}
 --- !u!114 &297121899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11227,8 +11228,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1192406845}
-  selectedCommands:
-  - {fileID: 1192406852}
+  selectedCommands: []
   variables:
   - {fileID: 1192406727}
   - {fileID: 1192406729}
