@@ -2636,7 +2636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: Morale
-  value: 0
+  value: 24
 --- !u!114 &73722237
 MonoBehaviour:
   m_ObjectHideFlags: 2
