@@ -61,7 +61,7 @@ public class EnemyController : MonoBehaviour {
                 if (oneNCAway.NodeNo == playerCurrentNode.NodeNo)
                 {
                     //drain morale
-                    attributes.DecreaseMorale(moraleAmount);
+                    //attributes.DecreaseMorale(moraleAmount);
                 }
             }
         }

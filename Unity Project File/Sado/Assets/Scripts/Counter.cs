@@ -54,6 +54,6 @@ public class Counter : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 6, 250, 100), "No of Nodes left: " + disSeconds);
+        //GUI.Label(new Rect(10, 6, 250, 100), "No of Nodes left: " + disSeconds);
     }
 }

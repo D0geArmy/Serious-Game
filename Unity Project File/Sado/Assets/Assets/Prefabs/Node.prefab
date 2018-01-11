@@ -77,7 +77,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.6
 --- !u!114 &114206943978213396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,9 +97,11 @@ MonoBehaviour:
   isSecoObjective: 0
   secObjValue: 0
   isObjectiveOver: 1
-  isStart: 1
+  isStart: 0
   isEnd: 0
-  crowdDensity: 0
+  myHighlight: 0
+  highlight: {fileID: 0}
+  highlightable: 0
 --- !u!212 &212347471933465706
 SpriteRenderer:
   m_ObjectHideFlags: 1

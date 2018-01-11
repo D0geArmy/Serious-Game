@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.UI;
 
 public class NodeManager : MonoBehaviour {
 
@@ -25,9 +26,14 @@ public class NodeManager : MonoBehaviour {
     public EnemyController stalker;
 
     //minigame
+    [HideInInspector]
     public int checkforred = 0;
     string continueBlock;
     bool haveWon;
+
+    //counter
+    [SerializeField]
+    Text counterBox;
 
     // Use this for initialization
     void Start() {
@@ -39,6 +45,7 @@ public class NodeManager : MonoBehaviour {
                 endGoal = nc;
             }
         }
+        haveWon = false;
     }
 
     private void Update()
@@ -56,7 +63,7 @@ public class NodeManager : MonoBehaviour {
             }
         }
 
-        //counter late time setup
+        //Node counter late time setup
         if(counter.totalTime <= 0)
         {
             flowchart.SetBooleanVariable("isLate", true);
@@ -67,13 +74,17 @@ public class NodeManager : MonoBehaviour {
         }
 
         //minigame win state
-        if(checkforred == 4)
+        if(checkforred == 4 & !haveWon)
         {
             haveWon = true;
             flowchart.ExecuteBlock(continueBlock);
         }
 
-
+        //counterBox
+        if (counterBox != null)
+        {
+            counterBox.text = "Time left: " + counter.totalTime.ToString();
+        }
     }
 
     //Returns the current node the player is in
@@ -109,6 +120,7 @@ public class NodeManager : MonoBehaviour {
         if (!haveWon)
         {
             flowchart.ExecuteBlock("MiniGame TimeOver");
+            print("call next");
         }
     }
 

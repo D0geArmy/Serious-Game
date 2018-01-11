@@ -38,7 +38,7 @@ public class NodeController : MonoBehaviour {
         myManager = FindObjectOfType<NodeManager>().gameObject.GetComponent<NodeManager>();
         Player = myManager.player;
         sTimer = myManager.scene.sceneCounter;
-        flowchart = myManager.flowchart; 
+        flowchart = myManager.flowchart;
         foreach (NodeController nc in myManager.iNode)
         {
             if (nc.isStart)
@@ -56,7 +56,14 @@ public class NodeController : MonoBehaviour {
             {
                 if (myHighlight == flowchart.GetIntegerVariable("Highlight"))
                 {
-                    highlight.SetActive(true);
+                    if (isObjectiveOver)
+                    {
+                        highlight.SetActive(false);
+                    }
+                    else
+                    {
+                        highlight.SetActive(true);
+                    }
                 }
                 else
                 {

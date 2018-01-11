@@ -136,7 +136,7 @@ public class PlayerAttributes : MonoBehaviour {
     public void DecreaseMorale(int amount)
     {
         //morale -= amount;
-        manager.flowchart.SetIntegerVariable("Morale", morale += amount);
+        manager.flowchart.SetIntegerVariable("Morale", morale -= amount);
         //Morale = morale;
     }
 
