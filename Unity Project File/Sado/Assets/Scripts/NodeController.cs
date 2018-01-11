@@ -113,19 +113,19 @@ public class NodeController : MonoBehaviour {
                         //myManager.disabled = true;
                         //trigger end here
                         //myManager.ReachedEnd();
-                        flowchart.ExecuteBlock("Work");
                         flowchart.SetIntegerVariable("TriggerID", NodeNo);
+                        flowchart.ExecuteBlock("Work");
                     }
                     else
                     {
-                        flowchart.ExecuteBlock("Home");
                         flowchart.SetIntegerVariable("TriggerID", NodeNo);
+                        flowchart.ExecuteBlock("Home");
                     }
                 }
                 else
                 {
-                    flowchart.ExecuteBlock("School");
                     flowchart.SetIntegerVariable("TriggerID", NodeNo);
+                    flowchart.ExecuteBlock("School");
                 }
             }
             else
@@ -133,6 +133,7 @@ public class NodeController : MonoBehaviour {
                 myManager.disabled = true;
                 //trigger for seco obj narrative sequence here
                 flowchart.SetIntegerVariable("CurrObj", secObjValue);
+                flowchart.SetIntegerVariable("TriggerID", NodeNo);
                 flowchart.ExecuteBlock("SecondaryObj");
             }
         }

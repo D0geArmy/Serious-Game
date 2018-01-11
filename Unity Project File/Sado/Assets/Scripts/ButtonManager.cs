@@ -11,7 +11,7 @@ public class ButtonManager : MonoBehaviour
 	public GameObject creditDetails;
 //	private static bool isSoundOn = false;
 
-	public void NewGameBin(string newGameLevel)
+	public void LoadScene(string newGameLevel)
 	{
 		SceneManager.LoadScene (newGameLevel);
 	}
@@ -32,11 +32,11 @@ public class ButtonManager : MonoBehaviour
 
 	public void ToggleCredits()
 	{	
-		isCreditUpdated = false;
-		creditDetails.SetActive (displayCreditPage);
-		displayCreditPage = !displayCreditPage;	
-		Debug.Log ("Display Status :"+ displayCreditPage.ToString());
-		isCreditUpdated = true;
+		//isCreditUpdated = false;
+		//creditDetails.SetActive (displayCreditPage);
+		//displayCreditPage = !displayCreditPage;	
+		//Debug.Log ("Display Status :"+ displayCreditPage.ToString());
+		//isCreditUpdated = true;
 	}
 
 //	public void ToggleSound()
