@@ -7531,7 +7531,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 947183332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.400002, z: 0}
+  m_LocalPosition: {x: 0, y: 18.666664, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 666166594}
@@ -8701,8 +8701,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1037373562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.4037037, y: 0.4037037, z: 0.4037037}
   m_Children:
   - {fileID: 2124699279}
   m_Father: {fileID: 0}
@@ -8994,8 +8994,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1079169402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
   m_Children:
   - {fileID: 1905067917}
   - {fileID: 1534250261}
@@ -11437,7 +11437,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.44
+  m_FillAmount: 0.36666667
   m_FillClockwise: 0
   m_FillOrigin: 0
 --- !u!222 &1332948209
@@ -14510,8 +14510,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1693737326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
   m_Children:
   - {fileID: 715067230}
   m_Father: {fileID: 0}
@@ -14572,7 +14572,6 @@ GameObject:
   - component: {fileID: 1700219757}
   - component: {fileID: 1700219756}
   - component: {fileID: 1700219755}
-  - component: {fileID: 1700219754}
   - component: {fileID: 1700219800}
   - component: {fileID: 1700219718}
   - component: {fileID: 1700219717}
@@ -14606,15 +14605,11 @@ GameObject:
   - component: {fileID: 1700219783}
   - component: {fileID: 1700219785}
   - component: {fileID: 1700219786}
-  - component: {fileID: 1700219787}
   - component: {fileID: 1700219789}
   - component: {fileID: 1700219788}
   - component: {fileID: 1700219790}
-  - component: {fileID: 1700219791}
-  - component: {fileID: 1700219792}
   - component: {fileID: 1700219794}
   - component: {fileID: 1700219795}
-  - component: {fileID: 1700219793}
   - component: {fileID: 1700219796}
   - component: {fileID: 1700219797}
   - component: {fileID: 1700219798}
@@ -14687,6 +14682,12 @@ GameObject:
   - component: {fileID: 1700219859}
   - component: {fileID: 1700219864}
   - component: {fileID: 1700219865}
+  - component: {fileID: 1700219867}
+  - component: {fileID: 1700219754}
+  - component: {fileID: 1700219787}
+  - component: {fileID: 1700219791}
+  - component: {fileID: 1700219793}
+  - component: {fileID: 1700219792}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -15278,7 +15279,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 0}
   - {fileID: 1700219782}
   - {fileID: 1700219783}
 --- !u!114 &1700219737
@@ -15670,7 +15670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -371.87463, y: 66.8506}
+  scrollPos: {x: -748.238, y: -854.96765}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 399
@@ -15682,8 +15682,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1700219870}
-  selectedCommands: []
+  - {fileID: 1700219834}
+  selectedCommands:
+  - {fileID: 1700219853}
   variables:
   - {fileID: 1700219719}
   - {fileID: 1700219713}
@@ -15725,7 +15726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 135
+  itemId: 511
   indentLevel: 0
   text: How does that matter?
   description: 
@@ -15990,7 +15991,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'Anjali idle middle :
 
-      Anjali : *gulp*
+      Anjali idle middle : *gulp*
 
       Anjali : Here it goes.
 
@@ -16009,7 +16010,7 @@ MonoBehaviour:
 
       Anjali: "Since few weeks."
 
-      Police interrogative: "And do you know him?"'
+      Police interrogative: '
 --- !u!114 &1700219766
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16108,6 +16109,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1700219733}
   - {fileID: 1700219765}
+  - {fileID: 1700219867}
   - {fileID: 1700219764}
   - {fileID: 1700219763}
 --- !u!114 &1700219770
@@ -16520,7 +16522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 424
+  itemId: 512
   indentLevel: 0
   text: And that justifies it?
   description: 
@@ -16619,39 +16621,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 2218.04
-    y: 795.7631
-    width: 162.72728
+    x: 2284.601
+    y: 796.78577
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 428
-  blockName: Day 5 - Morning 12
+  itemId: 513
+  blockName: New Block
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 0}
-  - {fileID: 1700219792}
   - {fileID: 1700219793}
+  - {fileID: 1700219792}
 --- !u!114 &1700219792
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1700219711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 429
-  indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: 'Anjali : "And that justifies it?"
-
-      Police : "That''s not what I meant!"'
---- !u!114 &1700219793
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -16662,7 +16645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 432
+  itemId: 515
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 1700219794}
@@ -16671,6 +16654,24 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &1700219793
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 514
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Anjali : "And that justifies it?"
+
+      Police : "That''s not what I meant!"'
 --- !u!114 &1700219794
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17171,7 +17172,7 @@ MonoBehaviour:
   storyText: 'She quit her job a few weeks later, due to the frustration caused by
     the harassers. '
   description: 
-  character: {fileID: 1651885780}
+  character: {fileID: 995015529}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -17343,7 +17344,7 @@ MonoBehaviour:
   storyText: Over the next few weeks, the police officers patrolled the streets, and
     ensured the safety of the people.
   description: 
-  character: {fileID: 1651885780}
+  character: {fileID: 995015529}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -17537,7 +17538,7 @@ MonoBehaviour:
   storyText: 'They also tracked down the stalker, who was also making phone to Anjali.
     It was later revealed, that he was none other than her colleague, Rahul. '
   description: 
-  character: {fileID: 1651885780}
+  character: {fileID: 995015529}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -17564,7 +17565,7 @@ MonoBehaviour:
   storyText: "Rahul was later arrested and imprisoned for 12 months.\r\nAnjali on
     the other hand resumed her position at the hotel, and felt safe."
   description: 
-  character: {fileID: 1651885780}
+  character: {fileID: 995015529}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -17591,7 +17592,7 @@ MonoBehaviour:
   storyText: The stalker continued calling her, making increasing lewd and disturbing
     remarks, causing Anjali to change her number.
   description: 
-  character: {fileID: 1651885780}
+  character: {fileID: 995015529}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -18202,7 +18203,7 @@ MonoBehaviour:
   targetButton: {fileID: 117537812}
 --- !u!114 &1700219864
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700219711}
@@ -18215,7 +18216,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1700219865
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700219711}
@@ -18246,6 +18247,32 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1700219867
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700219711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 510
+  indentLevel: 0
+  storyText: '"And do you know him?"'
+  description: 
+  character: {fileID: 1126564943}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1700219868
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18407,8 +18434,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1702314290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
   m_Children:
   - {fileID: 1394345744}
   - {fileID: 1128240068}
@@ -18871,8 +18898,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757261066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
   m_Children:
   - {fileID: 1994547102}
   - {fileID: 1351991784}
@@ -20396,8 +20423,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999795084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
   m_Children:
   - {fileID: 212178282}
   - {fileID: 1637529211}
@@ -20725,7 +20752,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 947183333}
   m_Direction: 3
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 30
   m_WholeNumbers: 1
   m_Value: 11
   m_OnValueChanged:

@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditDetails: {fileID: 911072498}
+  flowchart: {fileID: 428621415}
 --- !u!4 &292921208
 Transform:
   m_ObjectHideFlags: 0
@@ -624,9 +625,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 417201558}
-        m_MethodName: set_mute
-        m_Mode: 6
+      - m_Target: {fileID: 292921207}
+        m_MethodName: ToggleMute
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -897,6 +898,9 @@ GameObject:
   - component: {fileID: 428621436}
   - component: {fileID: 428621437}
   - component: {fileID: 428621438}
+  - component: {fileID: 428621440}
+  - component: {fileID: 428621439}
+  - component: {fileID: 428621441}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -917,11 +921,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 250, y: 113}
+  scrollPos: {x: 216.80846, y: 116.510635}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -930,6 +934,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 428621438}
+  - {fileID: 428621440}
   selectedCommands: []
   variables:
   - {fileID: 428621416}
@@ -1443,7 +1448,65 @@ MonoBehaviour:
   blockName: Mute
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 428621439}
+--- !u!114 &428621439
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428621414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 25
+  indentLevel: 0
+  volume: 0
+  fadeDuration: 0
+  waitUntilFinished: 0
+--- !u!114 &428621440
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428621414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 543
+    y: -40
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 24
+  blockName: Unmute
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 428621441}
+--- !u!114 &428621441
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428621414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 26
+  indentLevel: 0
+  volume: 1
+  fadeDuration: 0
+  waitUntilFinished: 0
 --- !u!1 &431410118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,9 +1761,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 417201558}
-        m_MethodName: set_mute
-        m_Mode: 6
+      - m_Target: {fileID: 292921207}
+        m_MethodName: ToggleMute
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

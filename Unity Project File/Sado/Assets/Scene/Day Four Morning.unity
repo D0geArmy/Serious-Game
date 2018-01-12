@@ -858,6 +858,21 @@ Prefab:
       propertyPath: isStart
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: highlightable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: highlight
+      value: 
+      objectReference: {fileID: 2100920755}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: myHighlight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
   m_IsPrefabParent: 0
@@ -1961,8 +1976,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201117948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
   m_Children:
   - {fileID: 293782249}
   - {fileID: 1641522029}
@@ -2789,8 +2804,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 297121897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
   m_Children:
   - {fileID: 1139987913}
   - {fileID: 744256421}
@@ -3871,8 +3886,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427483682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
   m_Children:
   - {fileID: 26903838}
   - {fileID: 1643682668}
@@ -6792,7 +6807,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.08
+  m_FillAmount: 0.06666667
   m_FillClockwise: 0
   m_FillOrigin: 0
 --- !u!222 &754773971
@@ -8371,8 +8386,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925851226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
   m_Children:
   - {fileID: 174057909}
   - {fileID: 1048205471}
@@ -11381,7 +11396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 660.068, y: 273.90656}
+  scrollPos: {x: 187.65486, y: 56.665283}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -11393,8 +11408,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1192406857}
-  selectedCommands: []
+  - {fileID: 1192406814}
+  selectedCommands:
+  - {fileID: 1192406843}
   variables:
   - {fileID: 1192406727}
   - {fileID: 1192406729}
@@ -12595,7 +12611,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1192406775}
-  - {fileID: 0}
   - {fileID: 1192406757}
 --- !u!114 &1192406775
 MonoBehaviour:
@@ -12612,7 +12627,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"How does that solve anything?"'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 299366238}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12662,7 +12677,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"I guess I''ll quit my job soon."'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 299366238}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12734,7 +12749,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"Don''t bother right now. We''ll talk later! I gotta go!"'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 331094995}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12908,7 +12923,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"Uh..haha.."'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 299366238}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12934,7 +12949,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"Guess it must be normal."'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 299366238}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -13161,8 +13176,8 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Mother idle right :\nanjali idle left : \nMother : \"Anjali! Before
       you leave, I need you to do something.\"\nAnjali : \"Yes mother?\"\nMother :
-      \"Oh okay! WIll do!\"\nAnjali : \"I need to speak with you today. Need you to
-      come soon!\"\nMother \"offscreen left\" : \nAnjali middle :\nAnjali : What does
+      \"I need to speak with you today. Need you to come soon!\"\nAnjali : \"Oh okay!
+      WIll do!\"\nMother \"offscreen left\" : \nAnjali middle :\nAnjali : What does
       she want to talk about?"
 --- !u!114 &1192406798
 MonoBehaviour:
@@ -17156,7 +17171,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263505709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -900, y: -540, z: 0}
+  m_LocalPosition: {x: -899.8624, y: -540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1181567819}
@@ -18634,8 +18649,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1415730741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
   m_Children:
   - {fileID: 1178175371}
   m_Father: {fileID: 0}
@@ -20235,6 +20250,11 @@ Prefab:
       propertyPath: highlight
       value: 
       objectReference: {fileID: 1977454919}
+    - target: {fileID: 114206943978213396, guid: 9eda1a9b83a86fc45967c4a76789f209,
+        type: 2}
+      propertyPath: highlightable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eda1a9b83a86fc45967c4a76789f209, type: 2}
   m_IsPrefabParent: 0
@@ -20745,8 +20765,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1668624800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 387.5, y: 218, z: 0}
+  m_LocalScale: {x: 0.4037037, y: 0.4037037, z: 0.4037037}
   m_Children:
   - {fileID: 1263505714}
   m_Father: {fileID: 0}
@@ -21738,7 +21758,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865858713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 58.800003, z: 0}
+  m_LocalPosition: {x: 0, y: 60.66667, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1030869183}
@@ -23475,7 +23495,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1865858714}
   m_Direction: 3
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 30
   m_WholeNumbers: 1
   m_Value: 2
   m_OnValueChanged:

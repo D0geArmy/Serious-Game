@@ -4,7 +4,8 @@ using UnityEngine;
 using Fungus;
 using UnityEngine.UI;
 
-public class NodeManager : MonoBehaviour {
+public class NodeManager : MonoBehaviour
+{
 
     //fungus related
     public Flowchart flowchart;
@@ -36,7 +37,8 @@ public class NodeManager : MonoBehaviour {
     Text counterBox;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         counter = scene.sceneCounter;
         foreach (NodeController nc in iNode)
         {
@@ -58,13 +60,13 @@ public class NodeManager : MonoBehaviour {
         {
             if (player.position == endGoal.gameObject.transform.position)
             {
-               // print("lost");
+                // print("lost");
                 //GameOver();
             }
         }
 
         //Node counter late time setup
-        if(counter.totalTime <= 0)
+        if (counter.totalTime <= 0)
         {
             flowchart.SetBooleanVariable("isLate", true);
         }
@@ -74,7 +76,7 @@ public class NodeManager : MonoBehaviour {
         }
 
         //minigame win state
-        if(checkforred == 4 & !haveWon)
+        if (checkforred == 4 & !haveWon)
         {
             haveWon = true;
             flowchart.ExecuteBlock(continueBlock);
@@ -90,10 +92,10 @@ public class NodeManager : MonoBehaviour {
     //Returns the current node the player is in
     public NodeController currentNode(int tNodeNo, Transform t)
     {
-        foreach(NodeController n in iNode)
+        foreach (NodeController n in iNode)
         {
             Transform nt = n.gameObject.transform;
-            if(nt.position == t.position)
+            if (nt.position == t.position)
             {
                 tNodeNo = n.NodeNo;
             }
@@ -136,7 +138,7 @@ public class NodeManager : MonoBehaviour {
 
     public void ToggleIsObjectiveOver()
     {
-        foreach(NodeController nc in iNode)
+        foreach (NodeController nc in iNode)
         {
             if (nc.NodeNo == flowchart.GetIntegerVariable("TriggerID"))
             {
@@ -144,6 +146,4 @@ public class NodeManager : MonoBehaviour {
             }
         }
     }
-
-
 }

@@ -38,3 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Day Three Morning.unity
     guid: 1bfcea27e18f77945a5048ac476b225f
+  - enabled: 1
+    path: Assets/Scene/Game Over.unity
+    guid: 55020b2b72c6ba540946c643f480c0a7
+  - enabled: 1
+    path: Assets/Scene/Credits.unity
+    guid: a78da94b713c24148bcd05516f2bbed4
