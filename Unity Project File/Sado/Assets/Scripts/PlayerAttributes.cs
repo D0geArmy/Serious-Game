@@ -75,9 +75,10 @@ public class PlayerAttributes : MonoBehaviour {
             }
         }
 
+        morale = manager.flowchart.GetIntegerVariable("Morale");
+
         slider.value = morale;
 
-        morale = manager.flowchart.GetIntegerVariable("Morale");
 
         //min and max
         if (morale <= 0)
@@ -85,10 +86,10 @@ public class PlayerAttributes : MonoBehaviour {
             manager.flowchart.SetIntegerVariable("Morale", 0);
             manager.GameOver();
         }
-        else if (morale >= 24)
+        else if (morale >= 30)
         {
-            morale = 24;
-            manager.flowchart.SetIntegerVariable("Morale", 24);
+            morale = 30;
+            manager.flowchart.SetIntegerVariable("Morale", 30);
         }
         /*//GUI
           moraleText.text = morale.ToString();

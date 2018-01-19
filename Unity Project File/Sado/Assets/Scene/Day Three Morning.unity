@@ -4961,8 +4961,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 423450015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.784375, y: 0.784375, z: 0.784375}
   m_Children:
   - {fileID: 850554236}
   - {fileID: 12011509}
@@ -10510,8 +10510,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1037373562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.4037037, y: 0.4037037, z: 0.4037037}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.78425926, y: 0.78425926, z: 0.78425926}
   m_Children:
   - {fileID: 2124699279}
   m_Father: {fileID: 0}
@@ -10726,8 +10726,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1079169402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.784375, y: 0.784375, z: 0.784375}
   m_Children:
   - {fileID: 386831144}
   - {fileID: 660965733}
@@ -15024,7 +15024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 184.59875, y: 48.312847}
+  scrollPos: {x: 1084.5995, y: 182.92827}
   variablesScrollPos: {x: 0, y: 95}
   variablesExpanded: 1
   blockViewHeight: 402
@@ -15036,7 +15036,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1548472657}
+  - {fileID: 1548472580}
   selectedCommands: []
   variables:
   - {fileID: 1548472759}
@@ -16856,9 +16856,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Anjali: That''s quite rude.
+    stringVal: 'Anjali: "That''s quite rude."
 
-      Rahul: Me letting him know that you''re late would be rude.'
+      Rahul: "Me letting him know that you''re late would be rude."'
 --- !u!114 &1548472657
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -16948,7 +16948,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Rahul left : \nAnjali: OH MY GOD!\nRahul: "
+    stringVal: "Rahul left : \nAnjali: \"OH MY GOD!\"\nRahul: "
 --- !u!114 &1548472661
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18020,9 +18020,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Anjali: Haha..
+    stringVal: 'Anjali: "Haha.."
 
-      Rahul: Why do women take so long to dress up? '
+      Rahul: "Why do women take so long to dress up?"'
 --- !u!114 &1548472706
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21472,7 +21472,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Rahul idle middle : MISS ANJALI!'
+    stringVal: 'Rahul idle middle : "MISS ANJALI!"'
 --- !u!114 &1548472853
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -24177,8 +24177,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1693737326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.7058333, y: 0.7058333, z: 0.7058333}
   m_Children:
   - {fileID: 715067230}
   m_Father: {fileID: 0}
@@ -25312,8 +25312,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757261066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.7058333, y: 0.7058333, z: 0.7058333}
   m_Children:
   - {fileID: 1994547102}
   - {fileID: 1351991784}
@@ -27182,8 +27182,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999795084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.7058333, y: 0.7058333, z: 0.7058333}
   m_Children:
   - {fileID: 212178282}
   - {fileID: 1637529211}
@@ -27934,7 +27934,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2124699274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -899.8624, y: -540, z: 0}
+  m_LocalPosition: {x: -900.14166, y: -540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 597187754}

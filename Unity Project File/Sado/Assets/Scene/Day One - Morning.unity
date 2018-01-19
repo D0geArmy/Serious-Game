@@ -540,8 +540,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 60424047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.7058333, y: 0.7058333, z: 0.7058333}
   m_Children:
   - {fileID: 1483895473}
   - {fileID: 892734002}
@@ -6467,8 +6467,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 796654103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.36333334, y: 0.36333334, z: 0.36333334}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.7058333, y: 0.7058333, z: 0.7058333}
   m_Children:
   - {fileID: 259306554}
   - {fileID: 1317317578}
@@ -8139,7 +8139,7 @@ Prefab:
     - target: {fileID: 114836132648667882, guid: 4f749b260657b5149b1b1d1e7eb81deb,
         type: 2}
       propertyPath: morale
-      value: 24
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f749b260657b5149b1b1d1e7eb81deb, type: 2}
@@ -9472,8 +9472,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1235750692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.8390223, y: 0.8390223, z: 0.8390223}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 1.6301725, y: 1.6301725, z: 1.6301725}
   m_Children:
   - {fileID: 1831693810}
   - {fileID: 1923016409}
@@ -13035,8 +13035,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1633433099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.40364584, y: 0.40364584, z: 0.40364584}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.784375, y: 0.784375, z: 0.784375}
   m_Children:
   - {fileID: 1216482246}
   - {fileID: 89100059}
@@ -13358,8 +13358,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651566327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.4037037, y: 0.4037037, z: 0.4037037}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.78425926, y: 0.78425926, z: 0.78425926}
   m_Children:
   - {fileID: 1501726900}
   m_Father: {fileID: 0}
@@ -14730,7 +14730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 793.23724, y: 37.811344}
+  scrollPos: {x: 704.7127, y: -353.9917}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -14742,9 +14742,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1774212809}
+  - {fileID: 1774212839}
   selectedCommands:
-  - {fileID: 1774212928}
+  - {fileID: 1774212845}
   variables:
   - {fileID: 1774212826}
   - {fileID: 1774212827}
@@ -15552,12 +15552,11 @@ MonoBehaviour:
       Anjali : "I''m already getting a bit late for my work. It''l be really kind
       of you, please..."
 
-      Husband "Offscreen Left": "Fine fine! Will do. You go ahead and do your best
-      at work!"
+      Husband : "Fine fine! Will do. You go ahead and do your best at work!"
 
       Anjali happy : "Thanks, love."
 
-'
+      Husband "Offscreen Left" :'
 --- !u!114 &1774212846
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17325,7 +17324,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1774212928
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774212807}
@@ -18007,7 +18006,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1831693809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 433.64716, y: 259.82623, z: 0}
+  m_LocalPosition: {x: 433.71436, y: 259.78845, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 156086471}
@@ -19118,8 +19117,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1908405965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.5, y: 218, z: 0}
-  m_LocalScale: {x: 0.4037037, y: 0.4037037, z: 0.4037037}
+  m_LocalPosition: {x: 753, y: 423.5, z: 0}
+  m_LocalScale: {x: 0.78425926, y: 0.78425926, z: 0.78425926}
   m_Children:
   - {fileID: 427745405}
   m_Father: {fileID: 0}
@@ -19356,7 +19355,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1923016404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 461.8471, y: 259.9062, z: 0}
+  m_LocalPosition: {x: 461.9143, y: 259.8684, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 286874941}
